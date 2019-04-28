@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"cognito1b510f0f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"rajneethi": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"hosting": {}
+}

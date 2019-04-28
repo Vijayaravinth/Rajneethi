@@ -1,0 +1,52 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "rajneethi-20190306202711-authRole",
+			"UnauthRoleArn": "arn:aws:iam::472648578646:role/rajneethi-20190306202711-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::472648578646:role/rajneethi-20190306202711-authRole",
+			"Region": "ap-south-1",
+			"DeploymentBucketName": "rajneethi-20190306202711-deployment",
+			"UnauthRoleName": "rajneethi-20190306202711-unauthRole",
+			"StackName": "rajneethi-20190306202711",
+			"StackId": "arn:aws:cloudformation:ap-south-1:472648578646:stack/rajneethi-20190306202711/1f8a4fc0-4020-11e9-8952-02d368a4a862"
+		}
+	},
+	"auth": {
+		"cognito1b510f0f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/rajneethi-20190306202711-deployment/amplify-cfn-templates/auth/cognito1b510f0f-cloudformation-template.yml",
+				"logicalId": "authcognito1b510f0f"
+			},
+			"lastPushTimeStamp": "2019-03-07T06:50:12.929Z",
+			"output": {
+				"AppClientSecret": "1881tsv39s4ifo3hq2rlije128lcurvsl3i6ijt6g4jmpvbhmscf",
+				"UserPoolId": "ap-south-1_mkf69cGxa",
+				"AppClientIDWeb": "393h3oi7ipudfg62luslmpjvdo",
+				"AppClientID": "73svdib1ird9tlfb1i4blq3en2",
+				"IdentityPoolId": "ap-south-1:e53aec9f-7265-42df-93eb-189b3c670635",
+				"IdentityPoolName": "cognito1b510f0f_identitypool_1b510f0f__rajneethi",
+				"UserPoolName": "cognito1b510f0f_userpool_1b510f0f"
+			},
+			"lastPushDirHash": "wQIPbsyx6CIkuTBmExo5pqf811c="
+		}
+	},
+	"storage": {
+		"rajneethi": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/rajneethi-20190306202711-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storagerajneethi"
+			},
+			"lastPushTimeStamp": "2019-03-07T06:50:12.935Z",
+			"output": {
+				"BucketName": "rn-asset-rajneethi",
+				"Region": "ap-south-1"
+			},
+			"lastPushDirHash": "gkNaYilD+f2irhTcVVcTZ9rAVWo="
+		}
+	},
+	"hosting": {}
+}

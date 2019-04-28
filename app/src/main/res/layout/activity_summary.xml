@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus1" />
+
+        <EditText
+            android:id="@+id/edt_summary1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:gravity="start"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus2" />
+
+        <EditText
+            android:id="@+id/edt_summary2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:gravity="start"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus3" />
+
+        <EditText
+            android:id="@+id/edt_summary3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="start"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus4" />
+
+        <EditText
+            android:id="@+id/edt_summary4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="start"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus5" />
+
+        <EditText
+            android:id="@+id/edt_summary5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="start"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus6" />
+
+        <EditText
+            android:id="@+id/edt_summary6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="start"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus7" />
+
+        <EditText
+            android:id="@+id/edt_summary7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="start"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:padding="@dimen/dp5"
+            android:text="@string/summaryqus8" />
+
+        <EditText
+            android:id="@+id/edt_summary8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="start"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine" />
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@color/primary_dark"
+            android:text="@string/add"
+            android:layout_gravity="center"
+            android:textColor="@color/icons" />
+
+
+    </LinearLayout>
+</ScrollView>

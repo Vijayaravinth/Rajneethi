@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/change"
+        app:showAsAction="ifRoom"
+        android:title="@string/gotv"
+        android:icon="@drawable/chnage"/>
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@mipmap/ic_filter_list_white_24dp"
+        android:title="@string/filter"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item android:id="@+id/defaultData"
+                app:showAsAction="never"
+                android:title="@string/defaultData"/>
+            <item
+                android:id="@+id/age30"
+                android:title="@string/age30"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/age40"
+                android:title="@string/age40"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/age50"
+                android:title="@string/age50"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/agegreater50"
+                android:title="@string/ageabove50"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+
+
+</menu>

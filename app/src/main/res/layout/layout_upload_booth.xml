@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/toolbar" android:id="@+id/toolbar1" />
+    <TextView
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="@string/submit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/icons" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/projectSpinner"
+        android:layout_margin="@dimen/dp10"
+        android:layout_below="@+id/toolbar1"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edtBoothNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/custom_border"
+        android:hint="@string/boothNumber"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:layout_below="@+id/projectSpinner"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/primary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtBoothNumber"
+        android:id="@+id/booths"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtBoothName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:hint="@string/boothName"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/primary" />
+
+
+        <ImageView
+            android:id="@+id/addBooth"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnChooseFile"
+        android:layout_width="@dimen/dp150"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_below="@+id/booths"
+        android:background="@drawable/material_shadow1"
+        android:padding="@dimen/dp5"
+        android:text="@string/chooseFile"
+        android:textColor="@color/icons" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/boothrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btnChooseFile"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

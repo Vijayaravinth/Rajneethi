@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        app:cardBackgroundColor="@color/whatsapp"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/dp5"
+
+     >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="@dimen/dp40"
+                android:id="@+id/imgShowData"
+                android:layout_centerVertical="true"
+                android:tint="@color/icons"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/ic_keyboard_arrow_left_white_24dp"
+             />
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_toRightOf="@+id/imgShowData"
+                android:id="@+id/infoLayout"
+                android:layout_toEndOf="@+id/imgShowData"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtAllocatedBooths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:text="@string/allocatedBooths"
+                android:textColor="@color/icons" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/booth_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAllocatedBooths" />
+
+            <TextView
+                android:id="@+id/txtNoOfSurveys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/booth_recyclerview"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/icons" />
+
+            <TextView
+                android:id="@+id/txtNoOfSurveysToComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNoOfSurveys"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/icons" />
+        </RelativeLayout></RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:rotation="180"
+        android:scaleType="center"
+        android:src="@drawable/triangle"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

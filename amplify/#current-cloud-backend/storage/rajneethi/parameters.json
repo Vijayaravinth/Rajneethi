@@ -1,0 +1,13 @@
+{
+    "bucketName": "rn-asset",
+    "authPolicyName": "s3_amplify_0d7b72f3",
+    "unauthPolicyName": "s3_amplify_0d7b72f3",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "rw"
+}

@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/option_background1"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview_background"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus13" />
+
+            <CheckBox
+                android:id="@+id/cbFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/family" />
+
+            <CheckBox
+                android:id="@+id/cbAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movieaction" />
+
+            <CheckBox
+                android:id="@+id/cbAdult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/adult" />
+
+            <CheckBox
+                android:id="@+id/cbDrama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drama" />
+
+            <CheckBox
+                android:id="@+id/cbThriller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thriller" />
+
+            <CheckBox
+                android:id="@+id/cbAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/animation" />
+
+            <CheckBox
+                android:id="@+id/cbHorror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horror" />
+
+            <CheckBox
+                android:id="@+id/cbRomantic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/romantic" />
+
+            <CheckBox
+                android:id="@+id/cbComedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comedy" />
+
+            <CheckBox
+                android:id="@+id/cbMythology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mythology" />
+
+            <CheckBox
+                android:id="@+id/cbArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/art" />
+
+            <CheckBox
+                android:id="@+id/cbAnyGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anyGenre" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus14" />
+
+            <CheckBox
+                android:id="@+id/cbFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/familyFrends" />
+
+            <CheckBox
+                android:id="@+id/cbFavouriteActor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favourite" />
+
+            <CheckBox
+                android:id="@+id/cbDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/director" />
+
+            <CheckBox
+                android:id="@+id/cbProducer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producer" />
+
+            <CheckBox
+                android:id="@+id/cbreviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reiews" />
+
+            <CheckBox
+                android:id="@+id/cbActress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/factress" />
+
+            <CheckBox
+                android:id="@+id/cbHype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hype" />
+
+            <CheckBox
+                android:id="@+id/cbSocialMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/socialMedia" />
+
+            <CheckBox
+                android:id="@+id/cbPoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/poster" />
+
+            <CheckBox
+                android:id="@+id/cbTrailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trailer" />
+
+            <CheckBox
+                android:id="@+id/cbMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus15" />
+
+            <Spinner
+                android:id="@+id/spinnerBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtBanner"
+                android:inputType="text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus16" />
+
+            <RadioGroup
+                android:id="@+id/rgGenerallyWatchMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbPiracy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/piracy" />
+
+                <RadioButton
+                    android:id="@+id/rbTheatre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/theatre" />
+
+                <RadioButton
+                    android:id="@+id/rbDvd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/dvd" />
+
+                <RadioButton
+                    android:id="@+id/rbPaidInternet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/paidInternet" />
+
+                <RadioButton
+                    android:id="@+id/rbTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/tv" />
+
+                <RadioButton
+                    android:id="@+id/rbOthers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/others" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtMovieGenerallyWatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus17" />
+
+            <RadioGroup
+                android:id="@+id/rgSmartPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbSmartPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/smartPhone" />
+
+                <RadioButton
+                    android:id="@+id/rbSmartPhoneInternet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/smartPhoneInternet" />
+
+                <RadioButton
+                    android:id="@+id/rbNoSmartPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/noSmartPhone" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus18" />
+
+            <RadioGroup
+                android:id="@+id/rgMorePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbPriceYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rbPriceNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus19" />
+
+            <EditText
+                android:id="@+id/edtRecommentTheatre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus20" />
+
+            <RadioGroup
+                android:id="@+id/rgSupportKannadaMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbKannadaYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/rbKannadaNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/no" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus21" />
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/icons"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/monday" />
+
+                    <Spinner android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerMonday"/>
+
+                   <!-- <EditText
+                        android:id="@+id/edtMonday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:inputType="text"
+                        android:maxLines="1" />-->
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/tuesday" />
+
+                    <Spinner android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerTuesday"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/wednesday" />
+
+                    <Spinner android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerWednesday"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/thursday" />
+
+                    <Spinner android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerThursday"/>
+                </TableRow>
+                <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/friday" />
+
+                    <Spinner android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerFriday"/>
+            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/saturday" />
+
+                    <Spinner android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerSaturday"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/sunday" />
+
+                    <Spinner android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerSunday"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbAnyShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/anyShow"
+                        tools:ignore="TooManyViews" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:text="@string/opQus22" />
+
+
+                <RadioGroup
+                    android:id="@+id/rgAboutNewMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                    android:id="@+id/rbMoviePoster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/poster" />
+
+                    <RadioButton
+                        android:id="@+id/rbNewsPaper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/newspaper" />
+                    <RadioButton
+                        android:id="@+id/rbMovieTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/tv" />
+
+                    <RadioButton
+                        android:id="@+id/rbSocialMedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/socialMedia" />
+                    <RadioButton
+                        android:id="@+id/rbRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/radio" />
+                </RadioGroup>
+
+
+                <EditText
+                    android:id="@+id/edtAboutNewMovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/roundbutton"
+            android:gravity="center"
+            android:padding="@dimen/dp15"
+            android:text="@string/next"
+            android:textColor="@color/icons"/>
+
+    </LinearLayout>
+
+</ScrollView>

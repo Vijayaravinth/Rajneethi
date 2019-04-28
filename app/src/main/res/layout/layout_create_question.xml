@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Spinner
+            android:id="@+id/projectSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10" />
+
+        <Spinner
+            android:id="@+id/questionTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10" />
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:hint="@string/title"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/primary" />
+
+        <EditText
+            android:id="@+id/edtQuestionEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:hint="@string/questionEnglish"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/primary" />
+
+        <EditText
+            android:id="@+id/edtQuestionRegional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/custom_border"
+            android:hint="@string/questionRegional"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/primary" />
+
+        <RelativeLayout
+            android:id="@+id/optionsEnglishLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtOptionsInEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:hint="@string/addoptions"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/primary" />
+
+
+            <ImageView
+                android:id="@+id/imgAddoptionsEnglish"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@drawable/add" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/optionsRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtOptionsInEnglish" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/optionsRegionalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtoptionsRegional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:hint="@string/addoptionsregional"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/primary" />
+
+
+            <ImageView
+                android:id="@+id/imgAddOptionsRegional"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@drawable/add" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/optionsRegionalRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtoptionsRegional" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/primary"
+            android:padding="@dimen/dp10"
+            android:text="@string/submit"
+            android:textColor="@color/icons" />
+
+
+    </LinearLayout>
+</ScrollView>

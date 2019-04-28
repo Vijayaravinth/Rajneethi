@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/rounded_background"
+        android:hint="@string/enterMessage"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/dp10" />
+
+    <TextView
+        android:id="@+id/txtTextLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp10"
+        android:padding="@dimen/dp5" />
+
+    <TextView
+        android:id="@+id/txtMsgLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtMessage"
+        android:layout_margin="@dimen/dp10"
+        android:layout_toStartOf="@+id/txtTextLength"
+        android:layout_toLeftOf="@+id/txtTextLength"
+        android:padding="@dimen/dp5" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtMessage"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fabSend"
+        android:src="@drawable/ic_menu_send"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/edtMessage"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

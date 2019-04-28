@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/unSelectAll"
+        android:icon="@drawable/ic_unselect"
+        android:title="@string/unSelectAll"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/selectAll"
+        android:icon="@drawable/ic_select"
+        android:title="@string/selectAll"
+        app:showAsAction="always" />
+
+
+
+    <item
+        android:id="@+id/send_sms"
+        android:icon="@drawable/ic_sms"
+        android:title="@string/sendSMS"
+        app:showAsAction="always" />
+</menu>

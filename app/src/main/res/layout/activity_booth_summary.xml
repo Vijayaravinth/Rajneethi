@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus1" />
+
+            <EditText
+                android:id="@+id/edt_qus1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus2" />
+
+            <EditText
+                android:id="@+id/edt_qus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                
+                android:text="@string/qus3" />
+
+            <EditText
+                android:id="@+id/edt_qus3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus4" />
+
+            <EditText
+                android:id="@+id/edt_qus4"
+                android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus5" />
+
+            <EditText
+                android:id="@+id/edt_qus5"
+                android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus6" />
+
+            <EditText
+                android:id="@+id/edt_qus6"
+                android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus7" />
+
+            <EditText
+                android:id="@+id/edt_qus7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus8" />
+
+            <EditText
+                android:id="@+id/edt_qus8"
+                android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="@string/qus9" />
+
+            <EditText
+                android:id="@+id/edt_qus9"
+                android:layout_width="match_parent"
+                android:imeOptions="actionDone"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/custom_border"
+                android:inputType="text" />
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_gravity="center"
+                android:background="@color/primary_dark"
+                android:padding="@dimen/dp10"
+                android:text="@string/save"
+
+                android:textColor="@color/icons" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

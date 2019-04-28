@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rajneethilogo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/t" />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/rajneethilogo1"
+                android:tint="@color/icons" />
+
+            <TextView
+                android:id="@+id/link_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/optima_bold"
+                android:gravity="center"
+                android:text="@string/welcomeMsg"
+                android:textColor="@color/accent"
+                android:textSize="@dimen/sp24"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/material_shadow"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:minHeight="@dimen/dp50"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/accent" />
+
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/material_shadow"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:minHeight="@dimen/dp50"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/accent" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/round_button_login"
+                android:padding="@dimen/dp5"
+                android:text="@string/login"
+                android:textColor="@color/icons" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
+

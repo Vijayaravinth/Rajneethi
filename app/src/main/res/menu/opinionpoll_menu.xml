@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/get_questions"
+        android:title="@string/getQuestion"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+
+
+    <item
+        android:title="@string/changeLanguage"
+        app:showAsAction="never">
+
+        <menu>
+
+            <item
+                android:id="@+id/kannada"
+                android:title="@string/kannada"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/english"
+                android:title="@string/english"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/marati"
+                android:title="@string/marati"
+                app:showAsAction="never" />
+        </menu>
+
+
+    </item>
+
+</menu>

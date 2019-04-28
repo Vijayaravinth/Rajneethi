@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/booth_list_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10" />
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/maps"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp30"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voterCardCardView"
+                    android:layout_margin="@dimen/dp5"
+                    app:cardCornerRadius="@dimen/dp5"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dp5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtVoterCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/side_nav_bar"
+                            android:gravity="center"
+                            android:padding="@dimen/dp5"
+                            android:text="@string/haveVoterCard"
+                            android:textColor="@color/icons"
+                            android:textSize="@dimen/sp20"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <Spinner
+                            android:id="@+id/spinner_voterId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:id="@+id/voterCardLayout"
+                    app:cardCornerRadius="@dimen/dp5"
+                    android:visibility="gone"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dp5">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                       >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/side_nav_bar"
+                            android:gravity="center"
+                            android:padding="@dimen/dp5"
+                            android:text="@string/enterVoterCard"
+                            android:textColor="@color/icons"
+                            android:textSize="@dimen/sp20"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edtVoterCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:imeOptions="actionDone"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/form6card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/dp5"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="@dimen/dp5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_is_form_required"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/side_nav_bar"
+                            android:gravity="center"
+                            android:padding="@dimen/dp5"
+                            android:text="@string/isForm6Required"
+                            android:textColor="@color/icons"
+                            android:textSize="@dimen/sp20"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <Spinner
+                            android:id="@+id/spiner_form6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp5" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/form6_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="@dimen/dp5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/side_nav_bar"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/constituency"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/sp20" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/state"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/assembly_constituency"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_assemble_constituency"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="@dimen/dp5">
+
+                        <LinearLayout
+                            android:id="@+id/application_detailshow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/side_nav_bar"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/applicant_details"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/sp20" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/name"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/surename"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_surename"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/gender"
+                                android:textColor="@color/primary"
+                                android:textStyle="bold" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_male"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/male" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_female"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/female" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_other"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/other" />
+
+                            </RadioGroup>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/dob"
+                                android:textColor="@color/primary"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="@dimen/dp5">
+
+                        <LinearLayout
+                            android:id="@+id/placebirthdetailshow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/side_nav_bar"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/place_of_birth_details"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/sp20" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/state"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_pob_state"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/district"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/district_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp5"
+                                android:layout_marginTop="@dimen/dp5" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/village_town"
+                                android:textColor="@color/primary"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_village_town"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/place_of_birth"
+                                android:textColor="@color/primary"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_place_of_birth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="@dimen/dp5">
+
+                        <LinearLayout
+                            android:id="@+id/relatinshipdetailshow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/side_nav_bar"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/relationship_details"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/sp20" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/relationship_type"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_relationship"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp5"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radio_father"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/father" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_mother"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/mother" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_husband"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/husband" />
+
+                                <RadioButton
+                                    android:id="@+id/radio_relation_other"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/other" />
+
+                            </RadioGroup>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/realtionshipname"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_relationship_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/relationsurename"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_realtionsurename"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="@dimen/dp5">
+
+                        <LinearLayout
+                            android:id="@+id/fulladdressshow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/side_nav_bar"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/fulladdress"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/sp20" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/houseno"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_houseno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/street"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_street"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/village_town"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_fa_village_town"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/post_office"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_postoffice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/pincode"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_pincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/taluk"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_taluk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/district"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/fa_district_spinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp5"
+                                android:layout_marginTop="@dimen/dp5" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/mobile"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/email"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/dp16"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/edt_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textEmailAddress" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="@dimen/dp5">
+
+                        <LinearLayout
+                            android:id="@+id/documentshow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/side_nav_bar"
+                                android:gravity="center"
+                                android:padding="@dimen/dp5"
+                                android:text="@string/documents"
+                                android:textColor="@color/icons"
+                                android:textSize="@dimen/sp20" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/photograph"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/dp16"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/image_button_photograph"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:src="@drawable/camera" />
+
+                                <ImageView
+                                    android:id="@+id/image_photograph"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp" />
+
+                                <TextView
+                                    android:id="@+id/resource_photograph"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:textColor="@color/primary"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/idProof"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/dp16"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/image_button_id_proof"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:src="@drawable/camera" />
+
+                                <ImageView
+                                    android:id="@+id/image_id_proof"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp" />
+
+                                <TextView
+                                    android:id="@+id/resource_id_proof"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:textColor="@color/primary"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/addressProof"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/dp16"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/image_button_address_proof"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:src="@drawable/camera" />
+
+                                <ImageView
+                                    android:id="@+id/image_address_proof"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp" />
+
+                                <TextView
+                                    android:id="@+id/resource_address_proof"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/dp5"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/dp16"
+                                    android:textStyle="bold"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/primary_dark"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="@string/save"
+                    android:textColor="@color/icons"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/getLocationLayout"
+            layout="@layout/get_location" />
+
+        <include
+            android:id="@+id/setLocationLayout"
+            layout="@layout/set_location"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

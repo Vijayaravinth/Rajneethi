@@ -1,0 +1,159 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.amazonaws.appsync'
+
+
+def BASE_URL = '"' + BASE_URL + '"' ?: '"Define BASE_URL"'
+def BASE_URL1 = '"' + BASE_URL1 + '"' ?: '"Define BASE_URL1"'
+def BASE_URL2 = '"' + BASE_URL2 + '"' ?: '"Define BASE_URL2"'
+def S3_ACCESS_KEY = '"' + S3_ACCESS_KEY + '"' ?: '"Define S3_ACCESS_KEY"'
+def S3_SECRET_KEY = '"' + S3_SECRET_KEY + '"' ?: '"Define S3_SECRET_KEY"'
+def SMSAPI =  '"' + SMSAPI + '"' ?: '"Define SMSAPI"'
+def BALANCEAPI =  '"' + BALANCEAPI + '"' ?: '"Define BALANCEAPI"'
+
+
+
+android.buildTypes.each { type ->
+    type.buildConfigField 'String', 'BASE_URL', BASE_URL
+    type.buildConfigField 'String', 'BASE_URL1', BASE_URL1
+    type.buildConfigField 'String', 'BASE_URL2', BASE_URL2
+    type.buildConfigField 'String', 'S3_ACCESS_KEY', S3_ACCESS_KEY
+    type.buildConfigField 'String', 'S3_SECRET_KEY', S3_SECRET_KEY
+    type.buildConfigField 'String', 'SMSAPI', SMSAPI
+    type.buildConfigField 'String', 'BALANCEAPI', BALANCEAPI
+}
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.software.cb.rajneethi"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 64
+        versionName "1.996"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
+    }
+
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.google.android.gms:play-services-analytics:16.0.6'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Butter Knife
+    implementation 'com.jakewharton:butterknife:8.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.2.1'
+    //mutidex
+    implementation 'com.android.support:multidex:1.0.3'
+    //volley library
+    implementation 'com.android.volley:volley:1.1.0'
+    //recycler view and card view
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //progress state indicator
+    implementation 'com.github.kofigyan:StateProgressBar:7c232a9308'
+    //amazon libraries
+    implementation 'com.amazonaws:aws-android-sdk-core:2.6.30'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.6.30'
+    implementation 'com.amazonaws:aws-android-sdk-ddb:2.2.22'
+
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.6.3'
+
+    implementation ('com.amazonaws:aws-android-sdk-mobile-client:2.12.+@aar') { transitive = true }
+    implementation ('com.amazonaws:aws-android-sdk-auth-userpools:2.12.+@aar') { transitive = true }
+
+    //Marshmallow Permission
+    implementation 'com.auron:permission-manage:1.1.7'
+    //google map
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    //Location Updates
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    //pie chart
+    implementation 'com.github.blackfizz:eazegraph:1.2.2@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    //Round Image View
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //swipe layout
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    //validate text
+    implementation 'com.basgeekball:awesome-validation:1.3'
+    //web view
+    implementation 'com.thefinestartist:finestwebview:1.2.7'
+    //compress image
+    implementation 'id.zelory:compressor:2.1.0'
+    //proress dialog
+    implementation 'com.gmail.samehadar:iosdialog:1.0'
+
+    //app update checker
+    implementation 'com.github.jrvansuita:CheckNewAppVersionAvailable:v1.0.0'
+    //ok http
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    implementation files('libs/commons-cli-1.1.jar')
+    implementation files('libs/commons-io-1.2.jar')
+    implementation files('libs/junit.jar')
+    implementation files('libs/rabbitmq-client.jar')
+    implementation files('libs/rabbitmq-client-tests.jar')
+
+    //firebase messaging
+    implementation 'com.google.firebase:firebase-config:16.1.2'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+
+
+
+
+
+}
+apply plugin: 'com.google.gms.google-services'
+

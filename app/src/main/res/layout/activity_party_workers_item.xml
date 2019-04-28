@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="12px"
+        android:padding="15px">
+    <TextView
+        android:id="@+id/partworkerName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+ />
+        <TextView
+            android:id="@+id/partworkerRole"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+           android:layout_below="@+id/partworkerName" />
+    </RelativeLayout>
+
+
+</LinearLayout>

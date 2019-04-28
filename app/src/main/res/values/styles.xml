@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/optima_bold</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/icons</item>
+        <item name="android:actionOverflowButtonStyle">@style/AppTheme.AppBarOverlay.OverFlow</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay.OverFlow">
+        <item name="android:src">@mipmap/ic_more_vert_white_24dp</item>
+
+    </style>
+
+    <style name="ProgressBarStyle">
+        <item name="colorAccent">@color/divider</item>
+    </style>
+
+    <style name="FieldSurvey_Header_Text">
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_weight">50</item>
+        <item name="android:textColor">@color/cardview_dark_background</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="VoterDetailTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="VoterDetailSubTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">1dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/menu_anim</item>
+        <item name="android:windowExitAnimation">@anim/menu_hide_anim</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textColorPrimary">@color/icons</item>
+    </style>
+</resources>

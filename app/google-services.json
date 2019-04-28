@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "635164517701",
+    "firebase_url": "https://rajneethi-8018c.firebaseio.com",
+    "project_id": "rajneethi-8018c",
+    "storage_bucket": "rajneethi-8018c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635164517701:android:1bf5617653393ef1",
+        "android_client_info": {
+          "package_name": "com.software.cb.rajneethi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635164517701-md8ba8nv3u1i0kjafphia3jtofngm175.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANk3Vjr-nBLmwz3tndB--8YpAP9Bi9XVE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

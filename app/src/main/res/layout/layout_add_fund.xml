@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp10"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/custom_border"
+        android:hint="@string/title"
+        android:imeOptions="actionNext"
+        android:textColor="@color/primary"
+        android:inputType="text"
+        android:padding="@dimen/dp10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <EditText
+            android:id="@+id/edtStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:layout_weight="0.5"
+            android:textColor="@color/primary"
+            android:background="@drawable/custom_border"
+            android:hint="@string/startfundDate"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:focusable="false"
+            android:padding="@dimen/dp10" />
+
+
+        <EditText
+            android:id="@+id/edtEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:layout_weight="0.5"
+            android:textColor="@color/primary"
+            android:background="@drawable/custom_border"
+            android:hint="@string/endFundDate"
+            android:imeOptions="actionNext"
+            android:inputType="date"
+            android:focusable="false"
+            android:padding="@dimen/dp10" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/custom_border"
+        android:hint="@string/cost"
+        android:inputType="number"
+        android:textColor="@color/primary"
+        android:padding="@dimen/dp10" />
+
+    <EditText
+        android:id="@+id/edtExpenditure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/custom_border"
+        android:hint="@string/expenditure"
+        android:textColor="@color/primary"
+        android:inputType="number"
+        android:padding="@dimen/dp10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:layout_margin="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:visibility="gone"
+        android:textColor="@color/primary"
+        android:id="@+id/txtStatus"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusSpinner"
+        android:visibility="gone"
+        android:layout_margin="@dimen/dp10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_border"
+        android:layout_margin="@dimen/dp10"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/primary"
+        android:visibility="gone"
+        android:id="@+id/txtAgency"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/agencySpinner"
+        android:visibility="gone"
+        android:layout_margin="@dimen/dp10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:background="@color/primary"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/icons"
+        android:padding="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"/>
+</LinearLayout>

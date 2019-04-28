@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.software.cb.rajneethi">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.software.cb.rajneethi.utility.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/rajanithiround"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/primary" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.software.cb.rajneethi.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_path" />
+        </provider>
+
+        <!-- <meta-data
+             android:name="com.google.android.geo.API_KEY"
+             android:value="AIzaSyD6FUbJz4oU7Lk45AkqsBk_DwlOTqz6VAE" />-->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCyDCHhR7LcD8W1IKc6Cl4SeVnVxMg8oFQ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Login activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.OfflineConstituencyDashBoardActivity"
+            android:label="Rajneethi"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Project activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.ProjectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Offline constituency dashboard activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.LoginActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.blanche.carte.rajneethi.activity.OfflineConstituencyDashBoardActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.software.cb.rajneethi.supervisormigratoon.SupervisorView"
+            android:label="@string/activity_supervisorview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.StatsActivity"
+            android:label="@string/activity_stats"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.supervisormigratoon.BoothList"
+            android:label="@string/activity_stats"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.ToastMessageActivity"
+            android:label="@string/activity_stats"
+            android:screenOrientation="portrait" />
+        <!--
+             <activity
+             android:name=".supervisormigratoon.PartyWorkerLanding"
+             android:label="@string/activity_partyWorkerLanding" />
+        -->
+        <activity
+            android:name="com.software.cb.rajneethi.supervisormigratoon.PartyWorkers"
+            android:label="@string/activity_partyWorker"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.supervisormigratoon.VoterListV"
+            android:label="@string/activity_voterListV"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.supervisormigratoon.VoterListVDetails"
+            android:label="@string/activity_voterListVDetail"
+            android:screenOrientation="portrait" />
+
+        <!-- Constituency Activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.ConstituencyActivity"
+            android:screenOrientation="portrait" />
+        <!-- Download activity -->
+
+        <activity
+            android:name="com.software.cb.rajneethi.activity.DownloadActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Add voter activity -->
+
+
+        <!-- Voter search -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.VoterSearchActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Whatsapp integration activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.whatsapp.WhatsappIntegrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.MyConstituencyActivity"
+            android:label="My Constituency"
+            android:screenOrientation="portrait" />
+
+        <!-- Voter  profile activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.VoterProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.AddVoterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- Time table activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.TimeTableActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- Add events -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.AddEventsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- Caste Equation activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.CasteEquationActivity"
+            android:screenOrientation="portrait" />
+        <!-- Election history activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.ElectionHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Booth summary aCTIVITY -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.BoothSummaryActivity"
+            android:screenOrientation="portrait" />
+        <!-- Respondent info activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.RespondentInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- preview activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.PreviewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- opinion poll activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.OpinionPollActivity"
+            android:screenOrientation="portrait" />
+        <!-- caste estimation activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.CasteEstimationActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- influential people -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.InfluentialPeopleActivity"
+            android:screenOrientation="portrait" />
+        <!-- booth select -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.BoothSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- booth selection activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.BoothSelectionActivity"
+            android:screenOrientation="portrait" />
+
+        <!--TeleCalling activity-->
+        <activity
+            android:name=".activity.TeleCallingActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- Summary activity -->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.SummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.AnalyticsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.ConductSurveyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.UserManagementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.software.cb.rajneethi.activity.AddUserActivity"
+            android:screenOrientation="portrait" />
+        <!--constituency summary activity-->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.ConstituencySummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+
+        <activity
+            android:name=".activity.GrievanceActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".activity.AdminActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".activity.CreateQuestionsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.software.cb.rajneethi.activity.BSKActivity"
+            android:screenOrientation="portrait" />
+
+        <!--GOTV activity-->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.GOTVActivity"
+            android:screenOrientation="portrait" />
+
+        <!--listen to people activity-->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.ListenToPeopleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!--questionare activity-->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.QuestionareActivity"
+            android:screenOrientation="portrait" />
+
+        <!--maps activity-->
+        <activity
+            android:name="com.software.cb.rajneethi.activity.TrackSurveyActivity"
+            android:screenOrientation="portrait" />
+
+        <!--Enquire people activity-->
+        <activity
+            android:name=".activity.EnquirePeopleActivity"
+            android:screenOrientation="portrait" />
+
+        <!--photo activity-->
+        <activity
+            android:name=".activity.PhotoActivity"
+            android:screenOrientation="portrait" />
+
+        <!--summary audio activity-->
+        <activity
+            android:name=".activity.SummaryAudioActivity"
+            android:screenOrientation="portrait" />
+        <!--survey stats activity-->
+        <activity
+            android:name=".activity.SurveyStatsActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!--fund managment activity-->
+        <activity
+            android:name=".activity.FundManagmentActivity"
+            android:screenOrientation="portrait" />
+
+        <!--qc users activity-->
+        <activity
+            android:name=".qc.QCUsersActivity"
+            android:screenOrientation="portrait" />
+        <!--qc user audio activity-->
+        <activity
+            android:name=".qc.QCUserAudioActivity"
+            android:screenOrientation="portrait" />
+
+        <!--gotv statistics-->
+        <activity
+            android:name=".activity.GOTVStatistics"
+            android:screenOrientation="portrait" />
+
+        <!--Live track Activity-->
+        <activity
+            android:name=".activity.LiveTrackActivity"
+            android:screenOrientation="portrait" />
+
+        <!--Communication activty-->
+        <activity
+            android:name=".activity.CommunicationActivity"
+            android:screenOrientation="portrait" />
+
+        <!--payment actvity-->
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <!--dummy evm activity-->
+        <activity
+            android:name=".activity.DummyEVMActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.FamilyDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SendSmsActivity"
+            android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+
+        <service android:name=".services.RecordService" />
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <service
+            android:name=".job.MyJob"
+            android:exported="true"
+
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name=".widget.MyWidgetProvider">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.MywidgetListviewService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp5"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        android:layout_weight="1.75"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:padding="@dimen/dp5" />
+
+
+    <ImageView
+        android:id="@+id/candidateImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="center"
+        android:layout_weight=".75" />
+
+    <ImageView
+        android:id="@+id/imgPartyImage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="center"
+        android:layout_weight=".75" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".75"
+        android:gravity="center"
+        android:padding="@dimen/dp5">
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:scaleType="fitXY"
+            android:src="@drawable/arrowblack" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonVote"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_background" />
+
+</LinearLayout>

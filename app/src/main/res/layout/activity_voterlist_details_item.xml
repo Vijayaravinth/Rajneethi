@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:id="@+id/scrollViewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card Number" />
+
+            <TextView
+                android:id="@+id/cardNo"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+            <TextView
+                android:id="@+id/gender"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age" />
+
+            <TextView
+                android:id="@+id/age"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MobileNo" />
+
+            <TextView
+                android:id="@+id/mo_no"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="House Number" />
+
+
+            <TextView
+                android:id="@+id/houseNo"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serial Number" />
+
+            <TextView
+                android:id="@+id/serialNo"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Related" />
+
+            <TextView
+                android:id="@+id/relation"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relationship" />
+
+            <TextView
+                android:id="@+id/relationship"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <TextView
+                style="@style/VoterDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Polling Details" />
+
+            <TextView
+                android:id="@+id/hierarchy"
+                style="@style/VoterDetailSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/valid"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valid"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/Invalid"
+            android:layout_toRightOf="@+id/valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InValid"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</LinearLayout>

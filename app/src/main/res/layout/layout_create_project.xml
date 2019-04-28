@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/custom_border"
+        android:hint="@string/id"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/primary" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/custom_border"
+        android:hint="@string/name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/primary" />
+
+    <EditText
+        android:id="@+id/edtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/custom_border"
+        android:hint="@string/description"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/primary" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/primary"
+        android:padding="@dimen/dp10"
+        android:text="@string/submit"
+        android:textColor="@color/icons" />
+</LinearLayout>

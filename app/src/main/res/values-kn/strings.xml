@@ -1,0 +1,1086 @@
+<resources>
+    <string name="app_name">ರಾಜನೀತಿ</string>
+    <string name="pdialogmsg">ದಯಮಾಡಿ ನಿರೀಕ್ಷಿಸಿ</string>
+
+    <string name="ok">ಸರಿ</string>
+
+    <!--Login activity-->
+    <string name="username">ಬಳಕೆದಾರನ ಹೆಸರು</string>
+    <string name="password">ಪಾಸ್ವರ್ಡ್</string>
+    <string name="login">ಲಾಗಿನ್ ಮಾಡಿ</string>
+
+    <!--Booth summary  activity-->
+    <string name="qus1">ವಿದ್ಯುತ್ ಕೊರತೆ</string>
+    <string name="qus2">ನೀರಿನ ಸಮಸ್ಯೆ</string>
+    <string name="qus3">ಶಿಕ್ಷಣ</string>
+    <string name="qus4">ಆರೋಗ್ಯ</string>
+    <string name="qus5">ರಸ್ತೆಗಳು</string>
+    <string name="qus6">ಅಪರಾಧ / ಭದ್ರತೆ</string>
+    <string name="qus7">ಮೂಲ ಸೌಕರ್ಯಗಳು</string>
+    <string name="qus8">ಅಪರಾಧ / ಭದ್ರತೆ</string>
+    <string name="qus9"> ಸಾರಿಗೆ ಸೇವೆ</string>
+
+    <!--summary activity-->
+    <string name="summaryqus1">ಪ್ರಮುಖ ಪಕ್ಷಗಳು ಮತ್ತು ಅವರನ್ನು ಬೆಂಬಲಿಸುವ ಜಾತಿಗಳು</string>
+    <string name="summaryqus2">ಯಾವ ಪಕ್ಷವು ಮುಂಚೂಣಿಯಲ್ಲಿದೆ ? ಕಾರಣ</string>
+    <string name="summaryqus3"> ಯಾವ ಅಭ್ಯರ್ಥಿಯು ಮುಂಚೂಣಿಯಲ್ಲಿದೆ? ಕಾರಣ</string>
+    <string name="summaryqus4">ರಾಜಕೀಯವಾಗಿ ಸಂಬಂಧಿಸಿದ ಸಮಸ್ಯೆಗಳು, ಅಭಿವೃದ್ಧಿ ಅಥವಾ ಜಾತಿ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು?</string>
+    <string name="summaryqus5">ಚುನಾಯಿತ ಅಭ್ಯರ್ಥಿಯಿಂದ ಜನರ ನಿರೀಕ್ಷೆಗಳು?</string>
+    <string name="summaryqus6">ಕ್ಷೇತ್ರದಿಂದ ಆಯ್ಕೆಯಾಗುವ ಶಾಸಕರಿಂದ ಜನ ಏನನ್ನು ಬಯಸುತ್ತಿದ್ದಾರೆ?</string>
+    <string name="summaryqus7"> ಕರ್ನಾಟಕದಲ್ಲಿ ಮುಂಬರುವ ಸರ್ಕಾರದಿಂದ ಜನ ಏನನ್ನು ಬಯಸುತ್ತಿದಾರೆ?</string>
+    <string name="summaryqus8">ಮತಗಟ್ಟೆಯಲ್ಲಿ ಹೆಚ್ಚಿನ ಜನರು ಬಯಸುತ್ತಿರುವ ಪ್ರಮುಖ ಬದಲಾವಣೆ?</string>
+
+    <!--Voter Personal Info-->
+    <string name="respondent_info">ಪ್ರತಿಕ್ರಿಯೆಗಾರನ ಮಾಹಿತಿ</string>
+    <string name="respondent_name">ಹೆಸರು </string>
+    <string name="respondent_age">ವಯಸ್ಸು</string>
+    <string name="respondent_gender">ಲಿಂಗ</string>
+    <string name="respondent_caste">ಜಾತಿ</string>
+    <string name="respondent_phone">ದೂರವಾಣಿ ಸಂಖ್ಯೆ</string>
+    <string name="respondent_education">ಶಿಕ್ಷಣ </string>
+    <string name="respondent_occupation">ಉದ್ಯೋಗ</string>
+    <string name="save">ಸಲ್ಲಿಸಿ/Submit</string>
+
+    <string-array name="gender">
+        <item>ಲಿಂಗ</item>
+        <item>ಪುರುಷ</item>
+        <item>ಸ್ತ್ರೀ</item>
+        <item>ಇತರರು </item>
+    </string-array>
+
+    <string name="drawer_open">ತೆರೆಯಿರಿ</string>
+    <string name="drawer_close">ಮುಚ್ಚಿ </string>
+
+    <!--caste Estimate-->
+    <string name="caste_name">ಜಾತಿ ಹೆಸರು</string>
+    <string name="total">ಒಟ್ಟು </string>
+    <string name="percentage">ಶೇಕಡಾವಾರು</string>
+
+    <!--influential people-->
+    <string name="Name">ಹೆಸರು </string>
+    <string name="age">ವಯಸ್ಸು</string>
+    <string name="sex">ಲಿಂಗ</string>
+    <string name="caste">ಜಾತಿ</string>
+    <string name="phone">ದೂರವಾಣಿ ಸಂಖ್ಯೆ</string>
+    <string name="affliation">ಪಕ್ಷದ / ಎನ್ ಜಿ ಒ ಹೆಸರು </string>
+    <string name="post">ಉದ್ಯೋಗ</string>
+
+
+    <!--whatsapp activity-->
+    <string name="whatsapp_select_contact">ಸಂಪರ್ಕವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="whatsapp_text_message">ಸಂದೇಶವನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="whatsapp_image_message">ಇಮೇಜ್ ಆಯ್ಕೆಮಾಡಿ (ಐಚ್ಛಿಕ)</string>
+    <string name="whatsapp_send_message">ಸಂದೇಶ ಕಳುಹಿಸಿ </string>
+
+    <!--Add voter activity-->
+    <string name="constituency">ಕ್ಷೇತ್ರ</string>
+    <string name="state">ರಾಜ್ಯ</string>
+    <string name="assembly_constituency">ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ</string>
+    <string name="applicant_details"> ಅರ್ಜಿದಾರನ ವಿವರಗಳು </string>
+    <string name="name">ಹೆಸರು</string>
+    <string name="surename">ಉಪನಾಮ/ಕುಟುಂಬದ ಹೆಸರು/ಮನೆಹೆಸರು</string>
+    <string name="gender">ಲಿಂಗ</string>
+    <string name="male">ಪುರುಷ</string>
+    <string name="female">ಸ್ತ್ರೀ</string>
+    <string name="other">ಇತರರು </string>
+    <string name="dob">ಜನ್ಮ ದಿನಾಂಕ</string>
+    <string name="place_of_birth_details">ಜನ್ಮ ಸ್ಥಳ ವಿವರ</string>
+    <string name="district">ಜಿಲ್ಲೆ</string>
+    <string name="village_town">ಗ್ರಾಮ/ಹಳ್ಳಿ/ ಪಟ್ಟಣ</string>
+    <string name="place_of_birth">ಜನ್ಮ ಸ್ಥಳ</string>
+    <string name="relationship_details">ಸಂಬಂಧ ವಿವರಗಳು</string>
+    <string name="relationship_type">ಸಂಬಂಧದ ಪ್ರಕಾರ</string>
+    <string name="father">ತಂದೆ </string>
+    <string name="mother">ತಾಯಿ </string>
+    <string name="husband">ಗಂಡ</string>
+    <string name="realtionshipname">ಸಂಬಂಧದ ಹೆಸರು</string>
+    <string name="relationsurename">ಸಂಬಂಧದ ಉಪನಾಮ(ಯಾವುದಾದರೂ ಇದ್ದರೆ)</string>
+    <string name="fulladdress">ಪೂರ್ತಿ ವಿಳಾಸ </string>
+    <string name="houseno">ಮನೆ / ಬಾಗಿಲು ಸಂಖ್ಯೆ</string>
+    <string name="street">ಸ್ಟ್ರೀಟ್ / ಏರಿಯಾ / ಮೊಹಾಲ್ಲಾ / ರೋಡ್ / ಸ್ಥಳೀಯ ಪ್ರದೇಶ</string>
+    <string name="post_office">ಅಂಚೆ ಕಛೇರಿ</string>
+    <string name="pincode">ಪಿನ್ ಕೋಡ್</string>
+    <string name="taluk">ತೇಶಲ್ / ತಾಲುಕಾ / ಮಂಡಲ್ / ಠಾಣೆ</string>
+    <string name="mobile">ದೂರವಾಣಿ ಸಂಖ್ಯೆ</string>
+    <string name="email"> ಇಮೇಲ್</string>
+    <string name="survey">ಸಮೀಕ್ಷೆ</string>
+    <string name="dobsurvey">ಜನ್ಮ ದಿನಾಂಕ</string>
+    <string name="educational_qualification">Educational Qualification</string>
+    <string name="employment">Employment</string>
+    <string name="family_income">Family Income</string>
+    <string name="skillpossed">Skill Possessed</string>
+    <string name="bpo">Bpo/Telecaller</string>
+    <string name="bartender">Bartender</string>
+    <string name="beautician">Beautician</string>
+    <string name="bouncer">Bouncer</string>
+    <string name="car_automibile">Car/Bike/Automobile - service repair</string>
+    <string name="caretaker">Caretaker/Nanny</string>
+    <string name="carpentry">Carpentry</string>
+    <string name="cashier">Cashier</string>
+    <string name="construction">Construction/Labourer</string>
+    <string name="content_writer">Content Writer</string>
+    <string name="cooking">Cooking</string>
+    <string name="dance">Dance/Music other music Vocational Skills</string>
+    <string name="electrician">Electrician</string>
+    <string name="elctronicappliances">Electronic Appliances service Repair</string>
+    <string name="farming">Farming</string>
+    <string name="fitness">Fitness</string>
+    <string name="gardener">Gardener</string>
+    <string name="house_cleaning">House Cleaning</string>
+    <string name="house_painting">House Painting</string>
+    <string name="laundry">Laundry</string>
+    <string name="mechanic">Mechanic</string>
+    <string name="nurse">Nurse</string>
+    <string name="office_assistant">Office Assistant</string>
+    <string name="pest_control">Pest Control</string>
+    <string name="receptionist">Receptionist</string>
+    <string name="security_guard">Security Guard</string>
+    <string name="tailor">Tailor</string>
+    <string name="teaching">Teaching</string>
+    <string name="volunteer">Volunteer on Social service</string>
+
+    <string name="skilssneeded">Skills  Needed</string>
+    <string name="benefits_availed">Benefits Availed</string>
+
+    <!--Download activity-->
+    <string name="download">ಮತದಾರರ ಮಾಹಿತಿಗಳನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="offline_access">ಎಲ್ಲಾ ಮತದಾರ ದಾಖಲೆಗಳಿಗೆ ಆಫ್ಲೈನ್ ​​ಪ್ರವೇಶ</string>
+
+    <!--Add Events-->
+    <string name="event_title">ಕಾರ್ಯಕ್ರಮದ ಶೀರ್ಷಿಕೆ:</string>
+    <string name="event_date">ಕಾರ್ಯಕ್ರಮದ ದಿನಾಂಕ: </string>
+    <string name="event_time">ಕಾರ್ಯಕ್ರಮದ ಸಮಯ: </string>
+    <string name="contacts">ಸಂಪರ್ಕಗಳು: </string>
+    <string name="remarks">ಬೂತ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ :</string>
+    <string name="place">ಸ್ಥಳ:</string>
+    <string name="add_event">ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ಸೇರಿಸಿ :</string>
+    <string name="activity_supervisorview">ಮೇಲ್ವಿಚಾರಕ ವೀಕ್ಷಣೆ </string>
+    <string name="activity_stats">ಪಕ್ಷದ ಕಾರ್ಯಕರ್ತರ ಅಂಕಿಅಂಶಗಳು</string>
+    <string name="activity_partyWorker">ಪಕ್ಷದ ಕೆಲಸಗಾರನನ್ನು ಆಯ್ಕೆಮಾಡಿ </string>
+    <string name="activity_voterListV">ಮತದಾರರ ಪಟ್ಟಿ </string>
+    <string name="activity_voterListVDetail">ಮತದಾರನ ವಿವರಗಳು </string>
+
+
+    <!--Add Partyworker-->
+
+    <string name="event_title1">ಬಳಕೆದಾರನ ಹೆಸರು :</string>
+    <string name="contacts1">ಪಾಸ್ವರ್ಡ್ :</string>
+    <string name="remarks1">ದೂರವಾಣಿ ಸಂಖ್ಯೆ :</string>
+    <string name="place1">ಪಾತ್ರ : </string>
+    <string name="event_date1">ಪ್ರಾಜೆಕ್ಟ್:</string>
+    <!--  <string name="event_time1">Select Booth :</string>-->
+    <string name="add_event1">ಸಲ್ಲಿಸಿ</string>
+    <!-- <string name="event_date">Event Date :</string>
+     <string name="event_time">Event Time :</string>
+     <string name="contacts">Contacts :</string>
+     <string name="remarks">Remarks : </string>
+     <string name="place">Place : </string>
+     <string name="add_event">Add Event</string>
+     <string name="activity_supervisorview">Supervisor View</string>
+     <string name="activity_stats">Party workers Stats</string>
+     <string name="activity_partyWorker">Select Party Worker</string>
+     <string name="activity_voterListV">Voter List</string>
+     <string name="activity_voterListVDetail">Voter Details</string>-->
+
+    <!--validation error-->
+    <string name="mobileerror">ಮಾನ್ಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ </string>
+    <string name="error">ಮಾನ್ಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ </string>
+
+    <string name="retry">ಮರುಪ್ರಯತ್ನಿಸಿ </string>
+
+    <string name="constituency_details">ಕ್ಷೇತ್ರದ ವಿವರಗಳು</string>
+    <string name="title_activity_navigation">navigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">ಸೆಟ್ಟಿಂಗ್ಗಳು</string>
+    <string name="add_events">ಕಾರ್ಯಕ್ರಮ/ಘಟನೆಗಳನ್ನು ಸೇರಿಸಿ</string>
+    <string name="sms_delivered">SMS ರವಾನಿಸಲಾಗಿದೆ </string>
+    <string name="sms_not_delivered">SMS ವಿತರಿಸಲಾಗಿಲ್ಲ </string>
+    <string name="update_event">ಕಾರ್ಯಕ್ರಮ/ಘಟನೆಗಳನ್ನು ನವೀಕರಿಸಿ</string>
+    <string name="sending_sms">sms ಕಳುಹಿಸುವುದು</string>
+    <string name="all_fileds_required">ಎಲ್ಲಾ ಕ್ಷೇತ್ರಗಳು ಅಗತ್ಯವಿದೆ </string>
+
+    <string name="addUser">ಬಳಕೆದಾರರನ್ನು ಸೇರಿಸಿ </string>
+    <string name="selectRole">ಪಾತ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="supervisor">ಮೇಲ್ವಿಚಾರಕ</string>
+    <string name="partyWorker">ಪಕ್ಷದ ಕಾರ್ಯಕರ್ತ/ ಪಾರ್ಟಿ ವರ್ಕರ್ </string>
+    <string name="Manager">ವ್ಯವಸ್ಥಾಪಕ</string>
+
+    <string name="successfullyAdded">ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಲಾಗಿದೆ </string>
+    <string name="userExist">ಬಳಕೆದಾರ ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ</string>
+    <string name="Survey">ಸಮೀಕ್ಷೆ</string>
+    <string name="noInternet">ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವಿಲ್ಲ</string>
+    <string name="Error">ದೋಷ-ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ </string>
+    <string-array name="form6">
+
+        <item>ದಯವಿಟ್ಟು ಆಯ್ಕೆ ಮಾಡಿ </item>
+        <item>ಹೌದು </item>
+        <item>ಇಲ್ಲ </item>
+    </string-array>
+
+    <string name="analytics">ವಿಶ್ಲೇಷಣೆ</string>
+    <string name="selectBooth">ಮತಗಟ್ಟೆ ಆಯ್ಕೆಮಾಡಿ </string>
+    <string name="noBoothAllocated">ಕ್ಷಮಿಸಿ ನಿಮಗಾಗಿ ಮತಗಟ್ಟೆ ನಿಯೋಜಿಸಿಲ್ಲ  </string>
+    <string name="noQuestion">ಯಾವುದೇ ಪ್ರಶ್ನೆಗಳು ಕಂಡುಬಂದಿಲ್ಲ </string>
+    <string name="userInput">ಬಳಕೆದಾರ ಇನ್ಪುಟ್</string>
+    <string name="mobileNumberExist">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ</string>
+    <string name="isForm6Required">ಫಾರ್ಮ್ 6 ಅಗತ್ಯವಿದೆಯೇ?</string>
+
+    <string name="documents">ದಾಖಲೆಗಳು </string>
+    <string name="photograph">ಛಾಯಾಚಿತ್ರ  </string>
+    <string name="idProof">ಐಡಿ ಪ್ರೂಫ್ </string>
+    <string name="addressProof">ವಿಳಾಸ ಪುರಾವೆ </string>
+    <string name="add">ಸೇರಿಸಿ</string>
+
+    <string name="allocateBooth">ನೀವು ಖಚಿತವಾಗಿ ಬೂತ್ ಹಂಚಲು  %s  ಬಯಸುವಿರಾ? </string>
+    <string name="deallocateBooth">ನೀವು ಖಚಿತವಾಗಿ  ಬೂತ್ ಬರಿದಾಗಿಸಲು %s ಬಯಸುತ್ತೀರಾ?</string>
+    <string name="boothSummary">ಮತಗಟ್ಟೆ ಸಾರಾಂಶ </string>
+    <string name="casteEquation">ಜಾತಿ ಸಮೀಕರಣ</string>
+    <string name="conductSuvey"> ಸಮೀಕ್ಷೆಯನ್ನು ನಡೆಸುವುದು</string>
+    <string name="successfullyUploaded">ಯಶಸ್ವಿಯಾಗಿ ಅಪ್ಲೋಡ್ ಮಾಡಲಾಗಿದೆ. </string>
+    <string name="noRecordFound">ಯಾವುದೇ ದಾಖಲೆ ಕಂಡುಬಂದಿಲ್ಲ </string>
+
+
+    <string name="search">ಹುಡುಕಿ</string>
+    <string name="syncOnline"> ಆನ್ಲೈನ್ ಸಿಂಕ್ ಮಾಡಿ </string>
+    <string name="getSurveyData">ಸಮೀಕ್ಷೆ ಮಾಹಿತಿಗಳನ್ನು ಪಡೆಯಿರಿ </string>
+    <string name="uploadImage">ಚಿತ್ರವನ್ನು  ಅಪ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="userManagement">ಬಳಕೆದಾರರ ನಿರ್ವಹಣೆ </string>
+    <string name="opinionPoll">ಜನಾಭಿಪ್ರಾಯ ಸಂಗ್ರಹಣೆ/ ಸಮೀಕ್ಷೆ </string>
+    <string name="dataUploading">ದಯವಿಟ್ಟು ಮಾಹಿತಿ ಅಪ್ಲೋಡ್ ಆಗುವುದನ್ನು ನಿರೀಕ್ಷಿಸಿ- ಸ್ವಲ್ಪ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ </string>
+    <string name="errorUploading">ದಯವಿಟ್ಟು ಕ್ಷಮಿಸಿ-ಮಾಹಿತಿ ಅಪ್ಲೋಡ್ ಮಾಡುವಾಗ ದೋಷವಾಗಿದೆ</string>
+    <string name="noOfSurveydone">ಸಮೀಕ್ಷೆ ಮುಗಿದಿದೆ: </string>
+    <string name="events">ಕಾರ್ಯಕ್ರಮಗಳು </string>
+    <string name="downloadData">ಮಾಹಿತಿಯನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ  </string>
+    <string name="downloading">ಮಾಹಿತಿಯನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="extractingFile"> ಫೈಲ್ ಬೇರ್ಪಡಿಸಲಾಗುತ್ತಿದೆ ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ ....... </string>
+    <string name="completed">ಪೂರ್ಣಗೊಂಡಿದೆ </string>
+    <string name="status">ಸ್ಥಿತಿ</string>
+    <string name="swotAnalysis">SWOT ಅನಾಲಿಸಿಸ್ </string>
+    <string name="influentialPeople"> ಪ್ರಭಾವಿ ಜನರು </string>
+    <string name="makeSureInternet">ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ </string>
+    <string name="incorrect">ನಿಮ್ಮ ಬಳಕೆದಾರಹೆಸರು ಅಥವಾ ಪಾಸ್ವರ್ಡ್ ತಪ್ಪಾಗಿದೆ </string>
+    <string name="welcomeMsg">ರಾಜನೀತಿ</string>
+    <string name="offlineDashboard">ಆಫ್ಲೈನ್ ​​ಡ್ಯಾಶ್ಬೋರ್ಡ್</string>
+    <string name="expiredVoters">ಮೃತಪಟ್ಟ ಮತದಾರ</string>
+    <string name="shiftedVoters">ಸ್ಥಳಾಂತರಗೊಂಡ ಮತದಾರ</string>
+    <string name="newVoter">ಹೊಸ ಮತದಾರರು</string>
+    <string name="notAvailable">ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="notResponding">ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತಿಲ್ಲ</string>
+    <string name="outofStation">ಪರ ಊರಿನಲ್ಲಿರುವವ</string>
+    <string name="mobileCount">ಮೊಬೈಲ್ ಕೌಂಟ್</string>
+    <string name="noImagefound">ಯಾವುದೇ ದಾಖಲೆಗಳಿಲ್ಲ</string>
+    <string name="questionare">ಪ್ರಶ್ನಾವಳಿ</string>
+    <string name="casteEstimate">ಜಾತಿ ಅಂದಾಜು</string>
+    <string name="casteEstimation">ಜಾತಿ ಅಂದಾಜು </string>
+    <string name="issues">ಸಮಸ್ಯೆಗಳು</string>
+    <string name="summary">ಸಾರಾಂಶ </string>
+    <string name="processing">ಸಂಸ್ಕರಣೆ ದಯವಿಟ್ಟು ನಿರೀಕ್ಷಿಸಿ</string>
+    <string name="preview">ಮುನ್ನೋಟ </string>
+    <string name="boothStats">ಮತಗಟ್ಟೆ ಮತ್ತು ಅಂಕಿಅಂಶಗಳು </string>
+    <string name="noEventFound">ಯಾವುದೇ ಈವೆಂಟ್ಗಳು ಕಂಡುಬಂದಿಲ್ಲs</string>
+    <string name="delete">ಅಳಿಸಿ</string>
+    <string name="confirmDelete">ನೀವು ಖಚಿತವಾಗಿ ಅಳಿಸಲು ಬಯಸುವಿರಾ? </string>
+    <string name="voterProfile">ಮತದಾರರ ವಿವರ </string>
+    <string name="searchVoters">ಮತದಾರರನ್ನು ಹುಡುಕಿ  </string>
+    <string name="noDBFound">ಯಾವುದೇ ಮಾಹಿತಿ ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="sendSMS">SMS ಕಳುಹಿಸು </string>
+    <string name="reschedule">ಪುನರ್ವಿಮರ್ಶೆ </string>
+    <string name="cancel">ರದ್ದುಮಾಡಿ </string>
+    <string name="surveyTaken">ಈಗಾಗಲೇ ಸಮೀಕ್ಷೆ ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ</string>
+    <string name="pleaseSelectOne">ದಯವಿಟ್ಟು ಯಾವುದಾದರೊಂದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</string>
+    <string name="voterCardNumber">ಮತದಾರ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ</string>
+    <string name="serialNo">ಕ್ರಮ ಸಂಖ್ಯೆ</string>
+    <string name="address">ವಿಳಾಸ</string>
+    <string name="boothName">ಮತಗಟ್ಟೆಯ ಹೆಸರು</string>
+    <string name="wardName">ವಾರ್ಡ್ ಹೆಸರು </string>
+    <string name="relation">ಸಂಬಂಧ </string>
+    <string name="otherDetails">ಇತರ ವಿವರಗಳು</string>
+    <string name="shifted">ಸ್ಥಳಾಂತರಿಸಲಾಗಿದೆ</string>
+    <string name="expired">ದಿವಂಗತ</string>
+    <string name="update">ಸಲ್ಲಿಸಿ/Submit</string>
+
+    <string name="voterDetails">ಮತದಾರ ವಿವರಗಳು</string>
+    <string name="familyDetails">ಕುಟುಂಬ ವಿವರಗಳು</string>
+    <string name="fieldSurvey">ಕ್ಷೇತ್ರ ಸಮೀಕ್ಷೆ</string>
+    <string name="electoralhanges">ಚುನಾವಣಾ ಬದಲಾವಣೆಗಳು</string>
+    <string name="familyDetailsNotFound">ಯಾವುದೇ ಸಂಬಂಧ ವಿವರಗಳು ಕಂಡುಬಂದಿಲ್ಲ</string>
+    <string name="gpsSettings">GPS ಸೆಟ್ಟಿಂಗ್ಗಳು</string>
+    <string name="gpsmsg">ಜಿಪಿಎಸ್ ಸಕ್ರಿಯಗೊಂಡಿಲ್ಲ. ನೀವು ಸೆಟ್ಟಿಂಗ್ಗಳ ಮೆನುಗೆ ಹೋಗಲು ಬಯಸುತ್ತೀರಾ?</string>
+    <string name="allocate">ನಿಯೋಜಿಸಿ</string>
+    <string name="deallocate">ಡೀಲ್ಲೊಕೇಟ್</string>
+
+    <!--need to change in kannda-->
+    <string name="age30">Age&lt;30</string>
+    <string name="age40">Age &lt; 40</string>
+    <string name="age50">Age &lt;50</string>
+    <string name="ageabove50">Age &gt; 50</string>
+    <string name="filter">Filter</string>
+
+
+    <string name="age18">ವಯಸ್ಸು : 18 &#8211;23</string>
+    <string name="age24">ವಯಸ್ಸು : 24 &#8211;35</string>
+    <string name="age36">ವಯಸ್ಸು : 36 &#8211;55</string>
+    <string name="age55">ವಯಸ್ಸು 55+</string>
+
+    <!--voter details fragment-->
+    <string name="voterName">ಹೆಸರು:</string>
+    <string name="voterRelation">ಸಂಬಂಧ:</string>
+    <string name="voterGender">ಲಿಂಗ:</string>
+    <string name="voterAge">ವಯಸ್ಸು:</string>
+    <string name="voterHouseNo">ಮನೆ / ಬಾಗಿಲು ಸಂಖ್ಯೆ:</string>
+    <string name="voterAddress">ವಿಳಾಸ:</string>
+    <string name="votrVoterCardNumber">ಮತದಾರ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ:</string>
+    <string name="voterSerialNo">ಕ್ರಮ ಸಂಖ್ಯೆ:</string>
+    <string name="voterBoothName">ಮತಗಟ್ಟೆಯ ಹೆಸರು:</string>
+    <string name="voterWardName">ವಾರ್ಡ್ ಹೆಸರು:</string>
+
+    <string name="bsk">ಬಿಎಸ್ ಕೆ</string>
+    <string name="defaultData">ಎಲ್ಲಾ ವಯಸ್ಸಿನ ಗುಂಪು</string>
+    <string name="gotv">ಜಿಒಟಿವಿ</string>
+    <string name="submitVote">ಮತ ಸಲ್ಲಿಸಿ</string>
+    <string name="voted">ಮತ ಹಾಕಲಾಗಿದೆ</string>
+
+
+    <string name="uploadFiles">ಫೈಲ್ ಗಳನ್ನು ಅಪ್ ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ ( %s / %s )</string>
+    <string name="uploading"> ಡೇಟಾ ಅಪ್ ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="gettingFiles">ಫೈಲ್ ಗಳನ್ನು ಅಪ್ ಲೋಡ್ ಮಾಡಲು ಸಿದ್ಧಪಡಿಸಲಾಗುತ್ತಿದೆ</string>
+    <string name="listenToPeople">ಜನರ ಮಾತು</string>
+    <string name="fileMissing">ಫೈಲ್ ಇಲ್ಲ</string>
+
+    <string name="sendEmail">ಇಮೇಲ್ ಕಳುಹಿಸಿ</string>
+    <string name="maps">ಟ್ರ್ಯಾಕ್ ಸಮೀಕ್ಷೆ</string>
+
+    <string name="enquire_people">ಜನರನ್ನು ವಿಚಾರಿಸಿ</string>
+    <string name="validate">ಮೌಲ್ಯೀಕರಿಸಿ</string>
+    <string name="invalidate"> ಅಮಾನ್ಯವಾಗಿದೆ</string>
+    <string name="validMobile">ದಯವಿಟ್ಟು ಮಾನ್ಯವಾದ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="description">ವಿವರಣೆ</string>
+    <string name="photo">ಫೋಟೋ</string>
+    <string name="upload">ಅಪ್ಲೋಡ್ ಮಾಡಿ</string>
+    <string name="uploadInProgress">ಅಪ್ಲೋಡ್ ಪ್ರಗತಿಯಲ್ಲಿದೆ</string>
+    <string name="uploadComplete">ಅಪ್ಲೋಡ್ ಪೂರ್ಣಗೊಂಡಿದೆ</string>
+    <string name="uploadFailed">ಅಪ್ಲೋಡ್ ವಿಫಲವಾಗಿದೆ</string>
+    <string name="call"> ಕಾಲ್</string>
+    <string name="alreadyUpdated">ಸಮೀಕ್ಷೆ ಈಗಾಗಲೇ ಮೌಲ್ಯೀಕರಿಸಿದೆ</string>
+
+    <string name="typeBoothName">ಟೈಪ್ ಬೂತ್ ಹೆಸರು</string>
+    <string name="selectUsername">ಬಳಕೆದಾರಹೆಸರನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="audio">ಆಡಿಯೋ</string>
+    <string name="click">Click record button to record audio</string>
+    <string name="recording"> ರೆಕಾರ್ಡಿಂಗ್</string>
+    <string name="recordingTime">00 : 00 : 00</string>
+    <string name="recordingStoppped">ವರದಿ ನಿಲ್ಲಿಸಿದೆ</string>
+    <string name="startRecord">ರೆಕಾರ್ಡಿಂಗ್ ಪ್ರಾರಂಭಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="stopRecord">ರೆಕಾರ್ಡಿಂಗ್ ನಿಲ್ಲಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</string>
+    <string name="surveyStats">ಸರ್ವೇ ಅಂಕಿಅಂಶಗಳು</string>
+    <string name="discard">ತಿರಸ್ಕರಿಸಿ</string>
+
+
+    <!--theatre survey-->
+    <string name="theatreSelection">Theatre Selection</string>
+    <string name="theatreProfiling">Theatre Profiling</string>
+    <string name="administration">ADMINISTRATION</string>
+    <string name="theatrename">1. What is the name of the Theatre ?</string>
+    <string name="theatreAddressQus">2. What is the postal address of the Theatre?</string>
+    <string name="theatreAddress">Address :</string>
+    <string name="theatreCity">City :</string>
+    <string name="theatreTaluk">Taluk :</string>
+    <string name="theatreDistrict">District :</string>
+    <string name="theatrePincode">Pincode :</string>
+    <string name="theatrePhone">Phone No :</string>
+
+    <string name="outSideTalukQus">3. (Ask this question only If the present theatre is in Taluk Headquarters) List the Cinema theatre or tents which are located outside the Taluk Headquarters.</string>
+    <string name="theatreName">Theatre Name :</string>
+    <string name="theatreVillage"> Village :</string>
+    <string name="theatreQus4"> 4. How many years old is the building?</string>
+    <string name="theatreQus5">5.If any renovation has been done ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="when">When :</string>
+    <string name="what">What :</string>
+    <string name="screen">Screen</string>
+    <string name="seats">Seats</string>
+    <string name="sounds">Sounds</string>
+    <string name="theatreQus6">6. What is the exact rental for that Theatre?</string>
+    <string name="projectionSystem">Projection System</string>
+    <string name="days7">7 Days</string>
+    <string name="perShow">Per Show</string>
+    <string name="theatreQus7">7. What is the percentage?</string>
+    <string name="theatreQus8">8. Is there a provision to vary the percentage if it’s a big banner cinema?</string>
+    <string name="theatreQus9">9. Who runs the theatre?</string>
+    <string name="owner">Owner</string>
+    <string name="ownerName">Owner Name :</string>
+    <string name="alternativeName">Alternative Name :</string>
+    <string name="alternativeNo">Alternative No :</string>
+    <string name="emailId">Email Id :</string>
+    <string name="leaseQus">Would you be interested to lease out the theatre in the near future?</string>
+    <string name="startDate">Start Date :</string>
+    <string name="endDate">End Date :</string>
+    <string name="theatreQus10">10. What is the measurement of the theatre premise?</string>
+    <string name="landarea">Total Land area :</string>
+    <string name="buildingArea">Total Building area:</string>
+    <string name="theatreQus11">11. How far is the theatre from the nearest..</string>
+    <string name="busStop">Bus Stop </string>
+    <string name="railwayStation">Railway Station</string>
+    <string name="autoStand">Auto Stand</string>
+    <string name="cabStand">Cab Stand</string>
+    <string name="hospital">Hospital</string>
+    <string name="marriageHall">Marriage Hall</string>
+    <string name="college">College</string>
+    <string name="theatreQus12">12. What are the amenities provided inside &amp; surrounding the Theatre?</string>
+    <string name="canteen">Canteen / Food &amp; Beverage</string>
+    <string name="restrooms">Restrooms</string>
+    <string name="lounge">Lounge / Seating</string>
+    <string name="theatreQus13">13. Name of the nearest theatre?</string>
+    <string name="otherName">Name:</string>
+    <string name="distance">Distance:</string>
+    <string name="theatreQus14">14. What is the revenue breakup on an average in this theatre approximately in a week?</string>
+    <string name="ticket">Ticket % :</string>
+    <string name="food">Canteen / Food &amp; Beverage %:</string>
+    <string name="advertising">Advertising % :</string>
+    <string name="parking">Parking % :</string>
+
+    <string name="single">Single Screen</string>
+    <string name="multiplex">Multiplex</string>
+    <string name="ticketQus1">1. What is the total Seating Capacity?</string>
+    <string name="balcony">Balcony</string>
+    <string name="firstClass">First Class</string>
+    <string name="secondClass">Second Class</string>
+    <string name="gandhiClass">Gandhi Class</string>
+    <string name="noraml">Normal</string>
+    <string name="silver">Silver</string>
+    <string name="gold">Gold (Prime)</string>
+    <string name="imax">IMAX</string>
+    <string name="platinum">Platinum</string>
+    <string name="platinumPrime">Platinum Prime</string>
+    <string name="ticketQus2">2. If Theatre provides e-booking facility? mention website</string>
+    <string name="ticketQus3">3. If theatre provides tele-booking facility? mention phone number</string>
+    <string name="ticketQus4">4. What kind of crowd does the cinema theatre attract?</string>
+    <string name="family">Family</string>
+    <string name="youth">Youth / Students</string>
+    <string name="mass">Mass / Adult</string>
+    <string name="couple">Couple</string>
+    <string name="ticketQus5">5. Which show attracts which category of people the maximum?</string>
+    <string name="morningShow">Morning Show :</string>
+    <string name="collegeGoers">College Gores</string>
+    <string name="families">Families</string>
+    <string name="coupleAdults">Couples and Mass/Adults</string>
+    <string name="matineeShow">Matinee Show :</string>
+    <string name="nightShow">Late Night Show :</string>
+    <string name="ticketQus6">6. Which language movies are generally played in this theatre?</string>
+    <string name="kannada">Kannada</string>
+    <string name="hindi">Hindi</string>
+    <string name="telugu">Telugu</string>
+    <string name="tamil">Tamil</string>
+    <string name="malayalam">Malayaam</string>
+    <string name="english">English</string>
+    <string name="marati">Marati</string>
+    <string name="tulu">Tulu</string>
+    <string name="ticketQus7">7. Which kannada actors movie might run?</string>
+    <string name="ticketQus8">8. When is the Theatre in High&#8211;Demand?</string>
+    <string name="weekends">Weekends</string>
+    <string name="eveningShow">Evening Show</string>
+    <string name="MorningShow">Morning Show</string>
+    <string name="matniee">Matniee</string>
+    <string name="publicHolidays">Public Holidays</string>
+    <string name="festival">Festivals</string>
+    <string name="summerVocation">Summer Vocation</string>
+    <string name="hitFilms">Hit Films</string>
+    <string name="ticketQus9">9. How are the seats in the cinema hall?</string>
+    <string name="comfortable">a. Comfortable</string>
+    <string name="upholstery">b. Upholstery condition:</string>
+    <string name="good">Good</string>
+    <string name="bad">Bad</string>
+    <string name="average">Average</string>
+    <string name="reclining">c. Reclining facility available:</string>
+    <string name="addPhoto">Attach a Photo</string>
+    <string name="ticketQus10">10. What does the theatre hall contain?</string>
+    <string name="ac">Ac</string>
+    <string name="fan">Fan</string>
+    <string name="both">Both</string>
+    <string name="none">None / Not Working</string>
+    <string name="ticketQus11">11. Which top 7 Actor’s movies are more famous in this theatre?</string>
+    <string name="ticketQus12">12. Which recent movie was recently screened for more than 25 days successfully in this theatre?</string>
+    <string name="nonKannada">Non &#8211; Kannada :</string>
+    <string name="kannadaMovie">Kannada :</string>
+    <string name="ticketQus13">13. What was the maximum rate of admission and for which Movie?</string>
+    <string name="rate">Rate :</string>
+    <string name="techQus1">What technology does the Cinema Theatre support?</string>
+    <string name="sound">a. Sound :</string>
+    <string name="dolby">Dolby Digital</string>
+    <string name="dts">DTS</string>
+    <string name="surround">Surround</string>
+    <string name="others">Others,Please specify</string>
+    <string name="digital">b. Digital and 3D System :</string>
+    <string name="d2">2D</string>
+    <string name="d3">3D</string>
+    <string name="d4">4DX / 4K</string>
+    <string name="d7">7D</string>
+    <string name="digitalScreen">c. Digital Screening</string>
+    <string name="ufo">UFO</string>
+    <string name="qube">QUBE</string>
+    <string name="scrabble">SCRABBLE</string>
+    <string name="k4">4K</string>
+    <string name="techQus2">2. How many screens does the premise</string>
+    <string name="techAspects"><u>Technical Aspects</u></string>
+    <string name="physicalSecurity"><u>Physical Security</u></string>
+    <string name="phyQus1">1. What is the Parking facility offered in the theatre premise? How many</string>
+    <string name="wheeler2">2 wheeler</string>
+    <string name="wheeler3">3 wheeler</string>
+    <string name="wheeler4">4 wheeler</string>
+    <string name="phyQus2">2. How many entrance/exit does the Theatre building have?</string>
+    <string name="housekeeping"><u>House Keeping</u></string>
+    <string name="hkQus1">1. What is the present condition of the Theatre?</string>
+    <string name="veryClean">Very Clean</string>
+    <string name="clean">Clean</string>
+    <string name="dirty">Dirty</string>
+    <string name="veryDirty">Very Dirty</string>
+    <string name="hkQus2">2. What is the present condition of the Toilets? (Do the women feel comfortable using it?)</string>
+    <string name="tVeryClean">Very Clean ( Pleasant smell )</string>
+    <string name="tVeryDirty">Very Dirty ( Pungent Smell )</string>
+    <string name="hkQus3">3. How many times a day is the toilets cleaned?</string>
+    <string name="once">Once a day</string>
+    <string name="twice">Twice a day</string>
+    <string name="thrice">Thrice a day</string>
+    <string name="once2Days">Once in 2 days</string>
+    <string name="week">Once in a week</string>
+    <string name="hkQus4">4. How frequently is the theatre hall cleaned?</string>
+    <string name="eachShow">After each show</string>
+    <string name="once3days">Once in 3 days</string>
+    <string name="hkQus5">5. Does the theatre have Fumigation / Rodent / Bed Bug Control System in place?</string>
+    <string name="respondentInfo"><u>Respondent\'s Information</u></string>
+    <string name="rName">Name :</string>
+    <string name="rAge">Age :</string>
+    <string name="rGender">Gender :</string>
+    <string name="rMobile">Mobile No :</string>
+    <string name="rEducation">Education :</string>
+    <string name="rOccupation">Occupation</string>
+    <string name="rMaritalStatus">Marital Status</string>
+    <string name="next">Next </string>
+
+    <!--people opinion about theatre-->
+    <string name="peopleOpinion">People Opinion</string>
+    <string name="opQus1">1. How often do you go to watch movies?</string>
+    <string name="never">Never</string>
+    <string name="affordability">Affordability</string>
+    <string name="noInterest">No internet connection</string>
+    <string name="awareness">Awareness</string>
+    <string name="lackofTime">Lack of time</string>
+    <string name="qualityofTheatre">Quality of theatre</string>
+    <string name="qualityofMovies">Qualities of Movies</string>
+
+    <string name="occasionally">Occasionally</string>
+    <string name="onceEvery3">Once every 3 months</string>
+    <string name="onceEvery2">Once every 2 months</string>
+    <string name="onceamonth">Once a month</string>
+    <string name="once2week">Once every 2 weeks</string>
+    <string name="onceweek">Once a week</string>
+    <string name="opQus2">2. What type of screening do you most commonly go to?</string>
+    <string name="singleScreen">Single screen theatre</string>
+    <string name="opQus3">3. Which class do you generally prefer to watch the movies?</string>
+    <string name="opQus4">4. What would be the affordable price for watching movies in the theatre?</string>
+    <string name="opQus5">5. How much do you think, is the maximum you can spend to watch a very good movie?</string>
+    <string name="o100">100 &#8211; 150</string>
+    <string name="o160">160 &#8211;  200 </string>
+    <string name="o210">210 &#8211; 250 </string>
+    <string name="o260">260 &#8211;  300 </string>
+    <string name="o300"> &gt;300</string>
+    <string name="o200">200 &#8211;  300</string>
+    <string name="o310">310 &#8211;  400 </string>
+    <string name="o410">410 &#8211; 500</string>
+    <string name="og500">&gt;500 </string>
+    <string name="opQus6">6. Which present Kannada actor do you like the most?</string>
+    <string-array name="actorName">
+        <item>Select one</item>
+        <item>Shiva Rajkumar</item>
+        <item>Puneeth Rajkumar</item>
+        <item> Sudeep</item>
+        <item> Darshan</item>
+        <item> Yash</item>
+        <item> Upendra</item>
+        <item>Ganesh</item>
+        <item>Rakshith Shetty</item>
+        <item> Jaggesh</item>
+        <item> Duniya Viji</item>
+        <item> Dhruva Sarja</item>
+        <item>Ravi Chandran</item>
+        <item>Ramesh Aravind</item>
+        <item>Ajay Rao</item>
+        <item>Prem Kumar</item>
+        <item> Sri Murali</item>
+        <item> Sharan</item>
+        <item> Diganth</item>
+        <item> Prajwal Devaraj</item>
+        <item> Komal</item>
+        <item> Yogesh (Loose Maada)</item>
+        <item> Satish Ninasam</item>
+        <item> Chiranjivi Sarja</item>
+        <item>Chetan Kumar (Aa Dinagalu)</item>
+        <item> Dhananjay</item>
+        <item> Doesn’t matter.</item>
+        <item>User input</item>
+    </string-array>
+
+    <string name="opQus7">8. Which Genre of movies your favorite actor should act in? (Multiple)</string>
+    <string name="movieaction"> Action / Fight</string>
+    <string name="adult">Adult</string>
+    <string name="drama"> Drama</string>
+    <string name="thriller"> Thriller / Suspense</string>
+    <string name="animation"> Animation</string>
+    <string name="horror"> Horror</string>
+    <string name="romantic"> Romantic / Love</string>
+    <string name="comedy">Comedy</string>
+    <string name="mythology"> Mythological</string>
+    <string name="art"> Art Cinema</string>
+
+    <string name="opQus8">7. With respect to the above actor, how would you describe yourself as?</string>
+    <string name="hardcore"> Hardcore Fan</string>
+    <string name="follower"> Follower</string>
+    <string name="justFan"> Just like to watch his movies.</string>
+    <string name="opQus9">9. Which present Kannada actress do you like the most?</string>
+    <string-array name="actressName">
+        <item>Slect one</item>
+        <item>Ramya</item>
+        <item>Radhika Pandit</item>
+        <item> Rashmika Mandanna</item>
+        <item> Rachita Ram</item>
+        <item> Shradda Srinath</item>
+        <item> Shruthi Hariharan</item>
+        <item>Praneeta Shubhas</item>
+        <item>Shanvi Srivastava</item>
+        <item> Krithi Karabanda</item>
+        <item> Hari Priya</item>
+        <item> Priya Mani</item>
+        <item>Aindrita Ray</item>
+        <item>Amulya</item>
+        <item>Ragini Divedi</item>
+        <item>Doesn’t matter</item>
+        <item>User input</item>
+    </string-array>
+    <string name="opQus10">10. Which present Kannada comedian do you like the most?</string>
+    <string-array name="comedian">
+        <item>Slect one</item>
+        <item>Sadhu Kokila</item>
+        <item>Rangayana Raghu</item>
+        <item>Chikanna</item>
+        <item> Kuri Prathapa</item>
+        <item> Mandya Ramesh</item>
+        <item> Bullet Prakash</item>
+        <item>Tabla Nani</item>
+        <item>Raju Talikote</item>
+        <item>Doesn’t matter</item>
+        <item>User input</item>
+    </string-array>
+
+    <string name="opQus11">11. Which present Kannada director do you like the most?</string>
+    <string-array name="director">
+        <item>Slect one</item>
+        <item>Santosh Anandram</item>
+        <item>Yograj Bhat</item>
+        <item>Suri</item>
+        <item>Prashanth Neil (Ugram Prashanth)</item>
+        <item>Pavan Kumar (Lucia)</item>
+        <item>Pawan Wadeyar</item>
+        <item>Harsha (Choreographer)</item>
+        <item>Jogi Prem</item>
+        <item>Nanda Kishore</item>
+        <item> Shashank</item>
+        <item> Dinakar Thoogadeepa</item>
+        <item> Tarun Sudheer</item>
+        <item> Rishabh Shetty</item>
+        <item> Upendra</item>
+        <item> Guruprasad (Mata)</item>
+        <item> Anup Bhandari</item>
+        <item> T S Nagabharana</item>
+        <item> Om Prakash</item>
+        <item> Hemanth Rao (Godhi Banna Sadharana Maikattu)</item>
+        <item> Doesn’t matter</item>
+        <item>User input</item>
+    </string-array>
+
+    <string name="opQus12">12. What type of role impresses you the most in the movie?</string>
+    <string name="hero"> Hero</string>
+    <string name="heroin"> Heroin</string>
+    <string name="comdedy"> Comedian</string>
+    <string name="supportingCharacter"> Supporting character</string>
+    <string name="villain"> Villain</string>
+
+    <string name="opQus13">13. Which genre of movies do you like the most?</string>
+    <string name="anyGenre">Any Genre</string>
+    <string name="opQus14">14. What influences your movie watching preference the most?</string>
+    <string name="familyFrends"> Family / Friends / Children</string>
+    <string name="favourite"> Favorite Actor</string>
+    <string name="director">Director</string>
+    <string name="producer"> Production / Producer / Banner</string>
+    <string name="reiews"> Reviews</string>
+    <string name="factress"> Favorite Actress</string>
+    <string name="hype"> Hype Created</string>
+    <string name="socialMedia"> Social Media (Facebook, YouTube)</string>
+    <string name="poster"> Poster</string>
+    <string name="trailer"> Trailer</string>
+    <string name="music"> Music</string>
+
+    <string name="opQus15">15. Which production houses / Banner movies do you like to watch?</string>
+    <string-array name="banner">
+        <item>Slect one</item>
+        <item>Vajreshwari Combines (Raghavendra Rajkumar)</item>
+        <item>Rockline Productions (Rockline Venkatesh)</item>
+        <item>Hombale Films (Vijay Kiragandur)</item>
+        <item>K Manju Films (K Manju)</item>
+        <item>Eshwari Pictures (V Ravichandran)</item>
+        <item>Jayanna Combines (Jayanna and Bogendra)</item>
+        <item>M N K Movies (N Kumar)</item>
+        <item>Thoogudeepa Productions</item>
+        <item>Chennambika Films (Kumaraswamy H D)</item>
+        <item> R S Productions (Kanakapura Srinivas)</item>
+        <item> Ramu Films (Ramu)</item>
+        <item> Tanvi Films (C R Manohar)</item>
+        <item> S V Productions (S V Babu)</item>
+        <item>Dwarkish Chitra (Dwarkish)</item>
+        <item> Don’t Know</item>
+        <item>User input</item>
+    </string-array>
+
+    <string name="opQus16">16. How do you generally like to watch the movies?</string>
+    <string name="piracy">Piracy DVD, Mobile copy, pen drive, Torrent</string>
+    <string name="theatre"> Theatre</string>
+    <string name="dvd"> Original DVD</string>
+    <string name="paidInternet">Paid Internet Streaming (Netflix etc)</string>
+    <string name="tv"> TV</string>
+
+    <string name="opQus17">17. Do you have a smartphone with an active Internet Connection?</string>
+    <string name="smartPhone">Smartphone</string>
+    <string name="smartPhoneInternet"> Smartphone Mobile Internet</string>
+    <string name="noSmartPhone"> No Smartphone</string>
+
+    <string name="opQus18">18. Do you mind paying more price per ticket if the theatres are well maintained?</string>
+    <string name="opQus19">19. Which theatre would you recommend to others in your city / town?</string>
+    <string name="opQus20">20. Do you support Dubbing of other language movies in Kannada?</string>
+    <string name="opQus21">21. Which day and show would be the most convenient for you to go to a movie?</string>
+    <string name="show">Show</string>
+    <string name="monday"> Monday</string>
+    <string name="tuesday"> Tuesday</string>
+    <string name="wednesday">Wednesday </string>
+    <string name="thursday"> Thursday </string>
+    <string name="friday"> Friday</string>
+    <string name="saturday"> Saturday </string>
+    <string name="sunday"> Sunday </string>
+    <string name="anyShow"> Any day, any show</string>
+
+    <string name="opQus22">22. How do you hear about new movies?</string>
+    <string name="newspaper"> Newspaper </string>
+    <string name="radio"> Radio</string>
+
+    <string name="opQus23">23. With whom do you go to watch movies?</string>
+    <string name="a23"> Alone</string>
+    <string name="b23"> Couples / Partner</string>
+    <string name="c23"> With Family</string>
+    <string name="d23"> With Friends</string>
+    <string name="e23"> With Colleagues</string>
+    <string name="opQus24">24. Which among the following elements appeal the most to you?</string>
+    <string name="a24"> Acting</string>
+    <string name="b24"> Dialogues (Script)</string>
+    <string name="c24">Favorite Director</string>
+    <string name="d24"> Favorite Actor</string>
+    <string name="e24"> Favorite Actress</string>
+    <string name="f24"> Looks, Costumes (Cinematography)</string>
+    <string name="g24">Music, Sound</string>
+    <string name="h24"> Screenplay (Editing)</string>
+    <string name="i24">Sets / Ambiance</string>
+    <string name="j24"> Special Effects</string>
+    <string name="k24"> Story</string>
+    <string name="l24"> Fighting / Stunts</string>
+    <string name="m24"> Dance</string>
+
+    <string name="opQus25">25. Which language movies do you like to watch?</string>
+    <string name="opQus26">26. which Hindi actor do you like the most?</string>
+    <string-array name="hindiActor">
+        <item>Select one</item>
+        <item>Aamir Khan</item>
+        <item>Salman Khan</item>
+        <item> Hrithik Roshan</item>
+        <item> Shahrukh Khan</item>
+        <item> Akshay Kumar</item>
+        <item> Ranveer Singh</item>
+        <item> Varun Dhawan</item>
+        <item> Ajay Devgn</item>
+        <item> Sushant Singh Rajput</item>
+        <item>Ranbir Kapoor</item>
+        <item>User input</item>
+    </string-array>
+    <string name="opQus27">27. which Tamil actor do you like the most?</string>
+    <string-array name="tamilActor">
+        <item>Select one</item>
+        <item>Rajinikanth</item>
+        <item>Ajith</item>
+        <item> Surya</item>
+        <item>Kamal Haasan</item>
+        <item> Dhanush</item>
+        <item> Vikram</item>
+        <item> Simbu</item>
+        <item>Vijay</item>
+        <item> Arya</item>
+        <item> Vijay Sethupathi</item>
+        <item>Sivakarthikeyan</item>
+        <item>User input</item>
+    </string-array>
+    <string name="opQus28">28. which Telugu actor do you like the most?</string>
+    <string-array name="teluguActor">
+        <item>Select one</item>
+        <item>Pawan Kalyan</item>
+        <item>Mahesh Babu</item>
+        <item> Prabhas</item>
+        <item> Jr. N.T.R</item>
+        <item> Allu Arjun</item>
+        <item> Ram Charan Teja</item>
+        <item> Ravi Teja</item>
+        <item> Nandamuri Balakrishna</item>
+        <item> Nagarjuna</item>
+        <item>Venkatesh</item>
+        <item>User input</item>
+    </string-array>
+    <string name="opQus29">28. which Malayalam actor do you like the most?</string>
+    <string-array name="malayalamActor">
+        <item>Select one</item>
+        <item>Mohanlal</item>
+        <item>Dulquer Salmaan</item>
+        <item> Jayaram</item>
+        <item> Nivin Pauly</item>
+        <item> Kunchako Boban</item>
+        <item>Prithviraj</item>
+        <item> Jayasurya</item>
+        <item> Mammootty</item>
+        <item> Fahadh Faasil</item>
+        <item>Dileep</item>
+        <item>User input</item>
+    </string-array>
+    <string name="opQus30">28. which Hollywood actor do you like the most?</string>
+    <string-array name="englishActor">
+        <item>Select one</item>
+        <item>Dwayne Johnson</item>
+        <item>Matt Damon</item>
+        <item> Tom Cruise</item>
+        <item> Johnny Depp</item>
+        <item> Ben Affleck</item>
+        <item>Vin Diesel</item>
+        <item> Robert Downey Jr</item>
+        <item> Brad Pitt</item>
+        <item> Adam Sandler</item>
+        <item>Mark Wahlberg</item>
+        <item>User input</item>
+    </string-array>
+
+    <string name="opQus31">31. In your city do you wish watching movies in multiplex ?</string>
+    <string name="educationa">Illiterate</string>
+    <string name="educationb"> High School</string>
+    <string name="educationc"> Under Graduate</string>
+    <string name="educationd"> Graduate</string>
+    <string name="educatione">Post Graduate</string>
+    <string name="educationf"> Doctorate</string>
+
+    <string name="occupationa"> Part Time</string>
+    <string name="occupationb">Full Time</string>
+    <string name="occupationc">Student</string>
+    <string name="occupationd">Business</string>
+    <string name="occupatione">Farmer</string>
+    <string name="occupationf"> House wife</string>
+    <string name="occupationg"> Daily wage</string>
+    <string name="unemployed">Unemployed</string>
+
+    <string name="economicStatus">Economic Status:</string>
+    <string name="motherTongue">Mother Tongue?</string>
+    <string name="status1">Rich Class</string>
+    <string name="status2">Middle Class</string>
+    <string name="status3"> Poor Class</string>
+
+    <string name="age1"> 12 &#8211; 17</string>
+    <string name="age2"> 18 –&#8211; 23</string>
+    <string name="age3"> 24 &#8211; 35</string>
+    <string name="age4"> 35 &#8211; 50</string>
+    <string name="age5"> 50 &amp; above</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="showTime">
+        <item>Select show</item>
+        <item>Morning show</item>
+        <item>Matinee Show</item>
+        <item>First Show</item>
+        <item>Second Show</item>
+    </string-array>
+
+    <string name="theatreQus3">3.List the Cinema theatre or tents which are located outside the Taluk Headquarters.</string>
+
+    <string name="films">Hombaale Films</string>
+    <string name="zero">0</string>
+    <string name="pulltoRefresh">Click to refresh</string>
+    <string name="selectUser">Select user</string>
+    <string name="contactNo">Contact No: </string>
+    <string name="lease">Lease</string>
+
+    <string name="allocatedBooths">Allocated Booths</string>
+    <string name="mobileNotAvailable">Mobile Number not available</string>
+    <string name="addMobile">Please add a mobile number</string>
+    <string name="updatingBackground">Updating in the background please wait</string>
+    <string name="getQuestion">Get Questions</string>
+    <string name="logout">Logout</string>
+    <string name="changeLanguage">Change Language</string>
+    <string name="allocatedBooth">Allocated Booths</string>
+    <string name="numofdone">Number of survey\'s done :</string>
+    <string name="numofyetcomplete">Nuber of survey\'s yet to complete :</string>
+    <string name="respondentName">Respondent Name</string>
+    <string name="respondentMobile">Respondent Mobile</string>
+    <string name="nameMobileRequired">Name and mobile number required</string>
+    <string name="enterVoterCard">Enter VoterCard Number</string>
+    <string name="haveVoterCard">Do you have VoterCard ?</string>
+    <string name="noEvents">No Events Found</string>
+    <string name="choosecsv">Choose CSV file</string>
+    <string name="chooseFile">Choose File</string>
+    <string name="date">ದಿನಾಂಕ</string>
+
+    <string name="speech_prompt">Please Speak</string>
+    <string name="speech_not_supported">Voice input is not supported by your phone</string>
+
+    <string name="message">ಸಂದೇಶ</string>
+    <string name="enterMessage">ಸಂದೇಶ ತಿಳಿಸಿ</string>
+
+    <string name="qc">Quality Check</string>
+    <string name="start">Start</string>
+    <string name="survey_report">Submit Survey Report</string>
+    <string name="skip">Skip</string>
+    <string name="dialogmsg">Please update the report about this survey</string>
+    <string name="statistics">ಅಂಕಿಅಂಶ</string>
+
+    <string name="resync">ಮರುಹೊಂದಿಸಿ (ರಿಸೆಟ್)</string>
+    <string name="live_track">Live Track</string>
+
+    <string name="quota_exceed">Your today quota exceeded</string>
+
+    <string name="smsbooth">Select Booth</string>
+    <string name="smsward">Select Ward</string>
+    <string name="smsassemblywise">Select Assembly</string>
+    <string name="communication">Communication</string>
+
+    <string name="fundManagement">Fund Management</string>
+    <string name="grievanceManagement">Grievance Management</string>
+    <string name="beneficiaryManagement">Beneficiary Management</string>
+    <string name="title">Title</string>
+    <string name="startfundDate">Start Date</string>
+    <string name="endFundDate">End Date</string>
+    <string name="cost">Cost</string>
+    <string name="expenditure">Expenditure</string>
+    <string-array name="status">
+
+        <item>Select one</item>
+        <item>Not yet started</item>
+        <item>On Hold</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="agency">
+        <item>Select one</item>
+        <item>PWD</item>
+        <item>BRED</item>
+        <item>BDA</item>
+    </string-array>
+
+    <string name="beneficiaryName">Beneficiary Name</string>
+    <string name="voter">Voter Name</string>
+    <string-array name="typeArray">
+        <item>Select type</item>
+        <item>Advertisement</item>
+        <item>Admin</item>
+        <item>Estate</item>
+    </string-array>
+    <string-array name="subTypeArray">
+        <item>Select subt type</item>
+        <item>Dangerous Condition</item>
+        <item>Construction of compund walls</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Select priority</item>
+        <item>High</item>
+        <item>Average</item>
+        <item>Low</item>
+    </string-array>
+
+
+    <string name="id">Id</string>
+
+    <string name="slatime">SLA Time</string>
+    <string name="boothNumber">Booth Number</string>
+    <string name="rewards">Rewards</string>
+    <string name="pastElection">Past Election History</string>
+
+    <string name="typeb">Type</string>
+
+    <string name="questionEnglish">Question text in english</string>
+    <string name="questionRegional">Question text in regional</string>
+    <string name="addoptions">Add Options in english</string>
+    <string name="addoptionsregional">Add options in regional</string>
+    <string name="mgmtActivities">ನಿರ್ವಹಣೆ ಚಟುವಟಿಕೆಗಳು</string>
+
+    <string name="familyHead">ಕುಟುಂಬದ ಮುಖ್ಯಸ್ಥ</string>
+    <string name="evm">EVM</string>
+    <string name="more">ಹೆಚ್ಚು</string>
+
+    <string name="verified">Verified</string>
+    <string name="unverified">UnVerified</string>
+    <string name="rejected">Rejected</string>
+    <string name="liteUpload">Lite Upload</string>
+
+    <string name="tqus1">1. येत्या श्रीगोंदा नगारा पालिका निवडणुकीत तुम्ही कोणत्या पक्षाला मत देणे पसंत कराल ?</string>
+    <string name="tqus2">2. कोणत्या उमेदवाराला तुम्ही भावी नगर पालिका अध्यक्ष म्हणून पाहू इच्छिता ?</string>
+    <string name="tqus3">3. जर तुमच्या आवडीचा नगरपालिका अध्यक्ष उमेदवार, अपक्ष उमेदवार म्हणून उभा राहिला तर तुम्ही त्याला समर्थन देणार का?</string>
+    <string name="tqus4a">4a. समजा जर उपरोक्त उमेदवार उपरोक्त पक्षाकडून निवडणूक लढवत नाही किंवा तिकिट मिळवत नसेल तर कोणता पक्ष निवडायचा?</string>
+    <string name="tqus4b">4b. आणि आपण कोणत्या उमेदवारास समर्थन देणार?</string>
+
+    <string name="tqus5">5. आपल्या पसंतीच्या नागारा पालिकाचे राष्ट्रपती पदाचे उमेदवार, दुसर्या पक्षामध्ये सामील होतात,तू अजूनही समर्थ आहेस का?</string>
+    <string name="tqus6">6. जर होय, तर कोणत्या पक्षामध्ये सामील झाल्यास, तुम्ही त्याचा पाठिंबा देता?</string>
+
+    <string-array name="topt1">
+        <item>Select one</item>
+        <item>राष्ट्रवादी + काँग्रेस</item>
+        <item>भाजप</item>
+        <item>शिवसेना</item>
+        <item>एआईएमआईएम</item>
+        <item>अपक्ष</item>
+    </string-array>
+
+    <string-array name="topt2">
+        <item>Select one</item>
+        <item>श्रीमती चायतई शांताराम गोरे (भाजप)</item>
+        <item>सॉ. नीलम संतोष गोरे (भाजप)</item>
+        <item>सॉ. सुनीता मच्छिंद्र शिंदे (भाजप)</item>
+        <item>सॉ. अनिता शिंदे (भाजप)</item>
+        <item>सॉ. शुभांगी मनोहर पोटे (राष्ट्रवादी + काँग्रेस)</item>
+        <item>सॉ. अर्चना राजू गोरे</item>
+        <item>सॉ. सुप्रिया गोरख आळेकर</item>
+    </string-array>
+    <string-array name="topt3">
+        <item>Select one</item>
+        <item>होय</item>
+        <item>नाही</item>
+        <item>सांगू शकत नाही</item>
+    </string-array>
+
+    <string-array name="topt6">
+        <item>Select one</item>
+        <item>राष्ट्रवादी + काँग्रेस</item>
+        <item>भाजप</item>
+    </string-array>
+    <string name="telecalling">Tele Calling</string>
+    <string name="totalVoters">Total Voters</string>
+    <string name="totalPhoneNumbers">Total Caste Wise Percentage</string>
+    <string name="casteWiseHouse">Caste Wise House</string>
+    <string name="castewisePhoneNumber">Cate Wise Phone Number</string>
+    <string name="selectAll">Select All</string>
+    <string name="unSelectAll">Un Select All</string>
+    <string name="acwise">Send Ac Wise</string>
+
+    <string name="exitpoll">Exit Poll</string>
+</resources>

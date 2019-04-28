@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="25dp">
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/icons"
+            app:cardCornerRadius="@dimen/dp5"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="@dimen/dp5">
+
+            <RelativeLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_dark"
+                android:layout_marginTop="25dp">
+
+
+                <TextView
+                    android:id="@+id/adapter_txt_events_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/adapter_txt_event_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adapter_txt_events_title"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/adapter_txt_event_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adapter_txt_event_date"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/sp18" />
+
+                <TextView
+                    android:id="@+id/adapter_txt_event_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/adapter_txt_event_time"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/sp18" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/menuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/adapter_txt_event_place"
+                android:layout_marginTop="25dp"
+                android:background="@color/option_background2"
+                android:orientation="vertical"
+                android:padding="@dimen/dp5"
+                android:visibility="gone"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/sms_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/dp3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_sms_white_24dp"
+                        android:tint="@color/icons" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/sendSMS"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/reschedule_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="@dimen/dp5"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_border_color_white_24dp"
+                        android:tint="@color/icons" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/reschedule"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/delete_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_delete_forever_white_24dp"
+                        android:tint="@color/icons" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/dp3"
+                        android:text="@string/cancel"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/closeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp3"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/close"
+                        android:tint="@color/icons" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pinImage"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pin" />
+</RelativeLayout>

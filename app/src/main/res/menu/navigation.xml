@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <group
+                android:id="@+id/grp1"
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/male"
+                    android:icon="@drawable/maledrawer"
+                    android:title="@string/male"
+                    app:actionLayout="@layout/menu_count" />
+                <item
+                    android:id="@+id/female"
+                    android:icon="@drawable/female_drawer"
+                    android:title="@string/female"
+                    app:actionLayout="@layout/menu_count" />
+                <item
+                    android:id="@+id/total"
+                    android:icon="@drawable/total"
+                    android:title="@string/total"
+                    app:actionLayout="@layout/menu_count" />
+            </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/age18"
+            android:icon="@drawable/age18"
+            android:title="@string/age18"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/age25"
+            android:icon="@drawable/maledrawer"
+            android:title="@string/age24"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/age36"
+            android:icon="@drawable/age35"
+            android:title="@string/age36"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/age55"
+            android:icon="@drawable/age55"
+            android:title="@string/age55"
+            app:actionLayout="@layout/menu_count" />
+    </group>
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/expiredVoters"
+            android:icon="@drawable/userpassed"
+            android:title="@string/expiredVoters"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/shiftedVoters"
+            android:icon="@drawable/shifted"
+            android:title="@string/shiftedVoters"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/newVoter"
+            android:icon="@drawable/newvoter"
+            android:title="@string/newVoter"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/notAvailable"
+            android:icon="@drawable/ic_perm_scan_wifi_black_24dp"
+            android:title="@string/notAvailable"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/notResponding"
+            android:icon="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+            android:title="@string/notResponding"
+            app:actionLayout="@layout/menu_count" />
+        <item
+            android:id="@+id/outOfStation"
+            android:icon="@drawable/ic_motorcycle_black_24dp"
+            android:title="@string/outofStation"
+            app:actionLayout="@layout/menu_count" />
+    </group>
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/mobileCount"
+            android:icon="@drawable/mobile"
+            android:title="@string/mobileCount"
+            app:actionLayout="@layout/menu_count" />
+    </group>
+</menu>

@@ -1,0 +1,19 @@
+{
+    "rajneethi": {
+        "awscloudformation": {
+            "AuthRoleName": "rajneethi-20190306202711-authRole",
+            "UnauthRoleArn": "arn:aws:iam::472648578646:role/rajneethi-20190306202711-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::472648578646:role/rajneethi-20190306202711-authRole",
+            "Region": "ap-south-1",
+            "DeploymentBucketName": "rajneethi-20190306202711-deployment",
+            "UnauthRoleName": "rajneethi-20190306202711-unauthRole",
+            "StackName": "rajneethi-20190306202711",
+            "StackId": "arn:aws:cloudformation:ap-south-1:472648578646:stack/rajneethi-20190306202711/1f8a4fc0-4020-11e9-8952-02d368a4a862"
+        },
+        "categories": {
+            "auth": {
+                "cognito1b510f0f": {}
+            }
+        }
+    }
+}

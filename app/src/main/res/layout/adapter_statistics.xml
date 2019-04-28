@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dp5"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/dp5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtBoothName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/txtBoothName"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/txtVerifiedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_toStartOf="@+id/txtVerifiedCount"
+            android:layout_toLeftOf="@+id/txtVerifiedCount"
+            android:padding="@dimen/dp10"
+            android:text="@string/verified" />
+
+        <TextView
+            android:id="@+id/txtUnVerifiedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVerifiedCount"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVerifiedCount"
+            android:layout_toStartOf="@+id/txtUnVerifiedCount"
+            android:layout_toLeftOf="@+id/txtUnVerifiedCount"
+            android:padding="@dimen/dp10"
+            android:text="@string/unverified" />
+
+        <TextView
+            android:id="@+id/txtRejected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUnVerifiedCount"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp10"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtUnVerifiedCount"
+            android:layout_toStartOf="@+id/txtRejected"
+            android:layout_toLeftOf="@+id/txtRejected"
+            android:padding="@dimen/dp10"
+            android:text="@string/rejected" />
+
+
+        <View
+            android:id="@+id/totalView"
+            android:layout_width="150dp"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/txtRejected"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp5"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/txtTotalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/totalView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp10" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

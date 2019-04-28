@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp5"
+
+            android:layout_marginStart="@dimen/dp5"
+            android:gravity="center"
+            android:padding="@dimen/dp5">
+
+            <TextView
+                android:id="@+id/adapter_txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/option_background1"
+                android:padding="@dimen/dp5"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/adapter_txt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adapter_txt_name"
+                android:ellipsize="end"
+                android:textColor="@color/option_background1"
+                android:maxLines="1"
+                android:padding="@dimen/dp5" />
+
+            <ImageView
+                android:id="@+id/img_call"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:tint="@color/option_background1"
+                android:src="@mipmap/ic_call_white_24dp"
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="@dimen/dp3"
+            android:background="@color/divider" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

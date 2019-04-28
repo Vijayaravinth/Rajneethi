@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/recordLayout"
+        android:layout_margin="@dimen/sp16"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="@dimen/sp24" />
+
+        <TextView
+            android:id="@+id/txtRecordTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRecord"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:text="@string/recordingTime"
+            android:textSize="@dimen/sp40" />
+
+
+        <ImageView
+            android:id="@+id/imgRecord"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@+id/txtRecordTime"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="@dimen/dp10"
+            android:src="@drawable/record_image" />
+
+        <ImageView
+            android:id="@+id/imgRecordStop"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_below="@+id/txtRecordTime"
+            android:contentDescription="@string/app_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:src="@drawable/record_stop"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtStartStopRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp5"
+        android:gravity="center"
+        android:text="@string/startRecord"
+        android:layout_below="@+id/recordLayout"
+        android:textSize="@dimen/sp18" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/imgSave"
+                android:layout_width="@dimen/dp50"
+                android:contentDescription="@string/app_name"
+                android:layout_height="@dimen/dp50"
+                android:src="@drawable/icon_done" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:gravity="center"
+                android:text="@string/save"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cross" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"
+            android:gravity="center"
+            android:text="@string/discard"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
